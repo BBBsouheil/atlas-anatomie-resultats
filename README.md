@@ -43,17 +43,15 @@ Le projet est parti d’un outil de révision destiné à une étudiante en méd
 
 Le repérage automatique ne garantit pas une couverture exhaustive du cours. Les questions et photos demandent une vérification. La vitesse varie selon le matériel et le modèle. Cette branche d’origine n’est pas incluse dans le snapshot Atlas actuellement sauvegardé sur GitHub.
 
-## Dissection : fonctionnelle, pas encore réaliste
+## Dissection : parcours réel dans le candidat C186
 
-![Scalpel pendant une incision dans la peau du bras](media/dissection-short-poster.png)
+![Le sujet sur la table avant les gestes](media/dissection-entry-c186.png)
 
-**La vidéo de présentation de 89 secondes est retirée de la vitrine principale après revue visuelle.** Les changements de caméra, le contact apparent de la sonde et l’empilement des couches ne donnent pas une présentation acceptable. De nouvelles prises au cadrage fixe, avec contrôle des surfaces visibles et tractions séparées, n’ont pas permis un parcours complet et propre. Aucune amélioration de réalisme n’est revendiquée.
+La [séquence C186 d’environ 89 secondes](media/dissection-c173.webm) montre le corps entier, une approche continue du bras, l’incision au scalpel, la sonde sur les tissus exposés, la traction et les écarteurs, puis une petite coupe du biceps source. Prise native continue, gestes à vitesse normale et parcours préparé avant la prise. Aucun montage des gestes ni chargement de poses pendant le film, aucun masquage de couches pour atteindre le muscle. Sang et repères désactivés dans l’application.
 
-La [vitrine](https://BBBsouheil.github.io/atlas-anatomie-resultats/#dissection) affiche un [extrait court de 17 secondes sans repères](media/dissection-c173.webm) : scalpel, traction, relâchement et maintien de la peau. Les mouvements sont enregistrés à vitesse normale ; les préparations intermédiaires sont coupées. Cet extrait ne remplace pas la preuve du parcours complet. Le [test historique de 3 min 55](media/dissection-c173-diagnostic-original.webm) reste une preuve fonctionnelle distincte, avec ses diagnostics. Les enregistrements et tentatives sont conservés.
+Les raccords du visage et des pieds sont traités localement à partir de Z-Anatomy. Yeux et oreilles natifs sont conservés. Les mâchoires suivent les bords déformés ; les manches passent au-dessus du champ. Annulation, rétablissement et sauvegarde/reprise sont vérifiés sur cette séance. Ces modifications de présentation ne remplacent pas une simulation de collision des instruments.
 
-C173 part des tissus recouvrants, expose le biceps gauche et incise une petite zone. Annulation, rétablissement et sauvegarde/reprise sont consignés. Ce scénario reste la référence fonctionnelle de développement.
-
-Le réalisme des tissus, de la traction et de l’intérieur reconstruit n’est pas validé. Le test historique C173 rapportait environ 27,7 FPS et une pause de 583 ms ; ces mesures ne concernent pas la nouvelle capture de 89 secondes. La réussite sur le bras ne démontre pas une dissection libre de tout le corps. **Le chantier du sang reste suspendu.**
+Le réalisme des tissus et de l’intérieur reconstruit reste non validé. Des reliefs du modèle source subsistent. Ce parcours précis ne démontre pas la dissection libre de tout le corps. C173 et son [test historique](media/dissection-c173-diagnostic-original.webm) restent conservés, la version stable est intacte. **Le sang reste suspendu.**
 
 ## IA : des entraînements réalisés dans le projet
 
