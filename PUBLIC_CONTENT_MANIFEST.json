@@ -1,6 +1,6 @@
 {
-  "status": "REJECTED_DEMO_WITHDRAWN_V4_CLEAN_DEMO_PENDING",
-  "atUtc": "2026-10-05T18:55:04.734937+00:00",
+  "status": "SHORT_PRESENTATION_V5_COMPLETE_DISSECTION_STILL_PENDING",
+  "atUtc": "2026-10-05T19:24:31.653030+00:00",
   "files": [
     {
       "path": ".nojekyll",
@@ -24,8 +24,13 @@
     },
     {
       "path": "index.html",
-      "bytes": 26849,
-      "sha256": "9f34d0d62a8d09204cf8425f2819e46823dd24eee1a5898f44c28f84f586d841"
+      "bytes": 27079,
+      "sha256": "6e80f73e1efd3cbf186ac7656389cf65bcd693ea4a516b5d43ea112d8ccb520f"
+    },
+    {
+      "path": "media/atlas-explorer-v6448.png",
+      "bytes": 219468,
+      "sha256": "0f554fa1728b84ac688fee9deaab5c9b82ebf0a8a77e65f359ecef607ee08a76"
     },
     {
       "path": "media/atlas-explorer.png",
@@ -38,14 +43,19 @@
       "sha256": "5b1767239f2b641f3687ebf1713ffcce3ce637e11f512b0678898779f822b5e9"
     },
     {
+      "path": "media/dissection-c173-diagnostic-original.webm",
+      "bytes": 18856380,
+      "sha256": "1510404d6c38a06174c3d698a0160cebc2d0e1041b3db370a7ca5078e68adaad"
+    },
+    {
       "path": "media/dissection-c173.png",
       "bytes": 677409,
       "sha256": "58f5c85af6450fb4b425156ee64f7bc4a5f08e17a0bdf1a6de65759ea68abbec"
     },
     {
       "path": "media/dissection-c173.webm",
-      "bytes": 18856380,
-      "sha256": "1510404d6c38a06174c3d698a0160cebc2d0e1041b3db370a7ca5078e68adaad"
+      "bytes": 6024296,
+      "sha256": "13c66ed83edcc5c1041aab044696ea45e7e6ce018e2caf5faf6e8cd309d9be6d"
     },
     {
       "path": "media/dissection-clean-c173.png",
@@ -76,6 +86,11 @@
       "path": "media/dissection-live-final.png",
       "bytes": 580426,
       "sha256": "750e60967e0d85061fcda860da81bdd79606356f8b9feee932e9900e8525b465"
+    },
+    {
+      "path": "media/dissection-short-poster.png",
+      "bytes": 622914,
+      "sha256": "8c0cd532ee66b2f986debee0481614d2073160715d65ad1352e87f82ce43222f"
     },
     {
       "path": "media/scanner-axial-zoom.webm",
@@ -124,8 +139,8 @@
     },
     {
       "path": "MEDIA_ATTRIBUTIONS.md",
-      "bytes": 7522,
-      "sha256": "ab2dea6348e61089138c55caae02f29e68dda4174146a4f178efd1ce3e7384c0"
+      "bytes": 8903,
+      "sha256": "f09b0b31c22e6f82b8c2fe449ddcdf0ae40cd3689f70de150294fc716488d4a4"
     },
     {
       "path": "NOTICE_DONNEES_ET_DROITS.txt",
@@ -144,13 +159,13 @@
     },
     {
       "path": "presentation.js",
-      "bytes": 4343,
-      "sha256": "cc146e6cdbee9c4c3d3104bb46101f148b693365bf3cf2ab9f840c3f567d7aa5"
+      "bytes": 4319,
+      "sha256": "597fc92141a10302a2963d0ff877161e2ab6aec360cba25bb513daf887a492a8"
     },
     {
       "path": "README.md",
-      "bytes": 11758,
-      "sha256": "7976f517dacbdc628813c50f1edcf311f95d51b9ee80e251f25ce2086f0caded"
+      "bytes": 12004,
+      "sha256": "a563a771e4b6cb77f432da205bdd971cf92c3e08d9fee288826be0c77bbea6ac"
     },
     {
       "path": "RESULTATS_IA_DETAILS.md",
@@ -190,12 +205,19 @@
   "existingMITAndThirdPartyNoticesPreserved": true,
   "rejectedDissectionVideoInMainPresentation": false,
   "rejectedVideoRetained": true,
-  "currentDissectionPresentation": "Photograph of C173 overview before incision; complete clean recording not achieved",
+  "currentDissectionPresentation": "Overview photograph plus short recorded skin-only gestures; no complete clean biceps journey",
   "fixedCaptureAttemptsAccepted": false,
   "explanationOfAIAddedInV4": false,
   "modelsModified": false,
   "bloodWorkPerformed": false,
   "archivedV3_videoPlaybackRateDefault": 1.5,
   "archivedV3_normalSpeedSelectable": true,
-  "archivedV3_dissectionChapters": 7
+  "archivedV3_dissectionChapters": 7,
+  "originalDiagnosticVideoArchived": {
+    "path": "media/dissection-c173-diagnostic-original.webm",
+    "sha256": "1510404d6c38a06174c3d698a0160cebc2d0e1041b3db370a7ca5078e68adaad"
+  },
+  "shortVideoSource": "V4 fixed-contact-stable recording; two chronological portions at normal speed",
+  "shortVideoShowsCompleteBicepsJourney": false,
+  "selectedExplorerCapture": "Author-supplied V6.4.48 screenshot"
 }

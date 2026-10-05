@@ -6,9 +6,9 @@
 
 Ce dépôt public présente le travail réalisé. Le code de l’application et des expériences est sauvegardé dans un dépôt privé distinct. La vitrine présente des preuves conservées ; elle n’exécute ni l’application ni les modèles.
 
-![Exploration anatomique dans l’Atlas Studio V5](media/atlas-explorer.png)
+![Exploration anatomique dans l’Atlas V6.4.48](media/atlas-explorer-v6448.png)
 
-*Capture réelle de l’Atlas Studio V5. Les versions des captures sont indiquées ; elles ne constituent pas un nouveau test de la dernière version.*
+*Capture V6.4.48 choisie par l’auteur : muscles et squelette, bibliothèque Z-Anatomy. Cette image ne valide pas le réalisme de la table.*
 
 ## Ce que fait l’application
 
@@ -45,11 +45,11 @@ Le repérage automatique ne garantit pas une couverture exhaustive du cours. Les
 
 ## Dissection : fonctionnelle, pas encore réaliste
 
-![Vue d’ensemble du mode dissection avant incision](media/dissection-entry-c173.png)
+![Scalpel pendant une incision dans la peau du bras](media/dissection-short-poster.png)
 
 **La vidéo de présentation de 89 secondes est retirée de la vitrine principale après revue visuelle.** Les changements de caméra, le contact apparent de la sonde et l’empilement des couches ne donnent pas une présentation acceptable. De nouvelles prises au cadrage fixe, avec contrôle des surfaces visibles et tractions séparées, n’ont pas permis un parcours complet et propre. Aucune amélioration de réalisme n’est revendiquée.
 
-La [vitrine](https://BBBsouheil.github.io/atlas-anatomie-resultats/#dissection) affiche une photo de la table avant incision en attendant la correction. Le [test historique de 3 min 55](media/dissection-c173.webm) reste une preuve fonctionnelle distincte, avec ses diagnostics. Les enregistrements et tentatives sont conservés.
+La [vitrine](https://BBBsouheil.github.io/atlas-anatomie-resultats/#dissection) affiche un [extrait court de 17 secondes sans repères](media/dissection-c173.webm) : scalpel, traction, relâchement et maintien de la peau. Les mouvements sont enregistrés à vitesse normale ; les préparations intermédiaires sont coupées. Cet extrait ne remplace pas la preuve du parcours complet. Le [test historique de 3 min 55](media/dissection-c173-diagnostic-original.webm) reste une preuve fonctionnelle distincte, avec ses diagnostics. Les enregistrements et tentatives sont conservés.
 
 C173 part des tissus recouvrants, expose le biceps gauche et incise une petite zone. Annulation, rétablissement et sauvegarde/reprise sont consignés. Ce scénario reste la référence fonctionnelle de développement.
 

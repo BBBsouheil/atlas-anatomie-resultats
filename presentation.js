@@ -1,8 +1,8 @@
 'use strict';
 const views = {
-  explorer: {src:'media/atlas-explorer.png', alt:'Exploration du corps et navigation par systèmes dans l’Atlas Studio V5.', caption:'Explorer — Atlas Studio V5 : navigation par systèmes et sélection 3D. Capture historique conservée.'},
+  explorer: {src:'media/atlas-explorer-v6448.png', alt:'Muscles et squelette dans l’Atlas V6.4.48, avec Z-Anatomy.', caption:'Explorer — Atlas V6.4.48 : muscles, squelette et navigation anatomique. Capture choisie par l’auteur.'},
   quiz: {src:'media/atlas-quiz.png', alt:'Quiz de l’Atlas Studio V5 : question de repérage avec cible 3D et fiche de la structure.', caption:'Réviser — Atlas Studio V5 : quiz de repérage, correction et fiche liée. Capture historique conservée.'},
-  dissection: {src:'media/dissection-entry-c173.png', alt:'Vue d’ensemble du mode dissection C173 avant incision.', caption:'Disséquer — C173 : vue de la table avant incision. La vidéo de présentation est en reprise ; réalisme non validé.'}
+  dissection: {src:'media/dissection-short-poster.png', alt:'Scalpel pendant une incision dans la peau du bras, C173.', caption:'Disséquer — C173 : scalpel pendant l’incision. Extrait court ci-dessous ; réalisme non validé.'}
 };
 const tabs = [...document.querySelectorAll('[role="tab"][data-view]')];
 function activate(tab, focus = false) {

@@ -7,7 +7,7 @@ Les médias historiques sont copiés sans retouche ; les révisions décrites ci
 | `media/atlas-explorer.png` | Atlas Studio V5, explorateur 3D | Capture historique, pas nouveau test C183 |
 | `media/atlas-quiz.png` | Atlas Studio V5, quiz et fiche | Capture historique, documentation partielle |
 | `media/dissection-c173.png` | C173, scénario B sur le biceps gauche | Prototype fonctionnel, réalisme non validé |
-| `media/dissection-c173.webm` | C173, parcours B, environ 3 min 55 | Accès et petite incision ; pas tout le corps |
+| `media/dissection-c173-diagnostic-original.webm` | C173, parcours B, environ 3 min 55 | Accès et petite incision ; pas tout le corps |
 | `media/scanner-c183.png` | C183, TotalSegmentator s0970 | Cas public connu de C182 ; fragments conservés |
 | `media/scanner-c183.webm` | C183, lecteur CT, environ 12 s | Preuve logicielle, pas nouveau test externe |
 
@@ -56,3 +56,10 @@ Les deux graphiques et agrégats rénaux proviennent des bilans déjà enregistr
 `media/dissection-entry-c173.png` : capture de la vue d’ensemble dans C173, avant incision, dans une séance de présentation isolée. Sang et diagnostics de collision désactivés, anatomie non masquée. Crédits anatomiques identiques aux autres médias C173 ci-dessus. Les indications visibles de la capture ne sont pas un nouveau benchmark.
 
 La vidéo de 89,103 secondes et ses images sont conservées mais retirées de la présentation principale après rejet visuel. De nouvelles prises fixes ont été interrompues lorsque la couche visée n’était plus accessible ou que le contact prévu n’était pas confirmé. Elles restent dans les preuves locales ; aucun parcours complet propre ni amélioration du réalisme n’est revendiqué. La physique et l’installation stable restent inchangées.
+
+## Révision V5 : capture choisie et extrait court
+
+- `media/atlas-explorer-v6448.png` : capture V6.4.48 fournie et choisie par l’auteur, copiée sans retouche. Vue Z-Anatomy des muscles et du squelette ; crédits anatomiques conservés. L’ancienne capture V5 reste archivée.
+- `media/dissection-c173.webm` : environ 17 secondes, montage chronologique de deux portions d’une capture native C173 au cadrage fixe. Incision au scalpel, traction et relâchement de la peau, puis maintien par un écarteur. Sang et diagnostics désactivés dans l’application pendant la prise ; pas de retouche destinée à effacer des repères incrustés. Vitesse normale, sonde et attentes intermédiaires retirées. Aucune incision du biceps n’est montrée dans cet extrait. Le réalisme et le parcours complet propre restent non validés.
+- `media/dissection-short-poster.png` : image de cet extrait à 3 secondes. La photo du corps incomplet est retirée de la présentation principale et reste archivée. La tentative de vue sans masque, qui révèle des intersections os/muscles-peau, n’est pas publiée.
+- L’enregistrement complet de 3 min 55 est conservé octet pour octet dans `media/dissection-c173-diagnostic-original.webm`. Son ancien nom ouvre désormais l’extrait court demandé. La physique, les modèles IA et la version stable restent inchangés.
