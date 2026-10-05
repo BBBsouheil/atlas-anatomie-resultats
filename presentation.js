@@ -2,7 +2,7 @@
 const views = {
   explorer: {src:'media/atlas-explorer-v6448.png', alt:'Muscles et squelette dans l’Atlas V6.4.48, avec Z-Anatomy.', caption:'Explorer — Atlas V6.4.48 : muscles, squelette et navigation anatomique. Capture choisie par l’auteur.'},
   quiz: {src:'media/atlas-quiz.png', alt:'Quiz de l’Atlas Studio V5 : question de repérage avec cible 3D et fiche de la structure.', caption:'Réviser — Atlas Studio V5 : quiz de repérage, correction et fiche liée. Capture historique conservée.'},
-  dissection: {src:'media/dissection-short-poster.png', alt:'Scalpel pendant une incision dans la peau du bras, candidat C186.', caption:'Disséquer — C186 : du corps entier à l’incision du biceps, en 89 secondes. Réalisme non validé.'}
+  dissection: {src:'media/dissection-short-poster.png?v=c190', alt:'C190 : couches rabattues par leurs deux coins et biceps exposé.', caption:'Disséquer — C190 : du corps entier au biceps, deux coins rabattus par couche. Démonstration approuvée ; réalisme non validé.'}
 };
 const tabs = [...document.querySelectorAll('[role="tab"][data-view]')];
 function activate(tab, focus = false) {

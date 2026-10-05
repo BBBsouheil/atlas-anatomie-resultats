@@ -22,7 +22,7 @@ L’Atlas est un environnement local pour explorer le corps en 3D et réviser l�
 | Comprendre | Modules neurone, synapse, néphron, filtration, œil, oreille, péristaltisme | Représentations pédagogiques simplifiées |
 | Voir des mouvements | Animations articulaires, respiration, trajets nerveux | Illustrations non validées biomécaniquement, rendu à améliorer |
 | Réviser | Identification, repérage 3D, QCM, correction, filtres, favoris et suivi | Qualité et couverture à vérifier |
-| Manipuler les tissus | Table, scalpel, sonde, pince, écarteurs, ciseaux, annulation, reprise | C173 démontré sur le biceps gauche ; réalisme non validé |
+| Manipuler les tissus | Table, scalpel, sonde, pince, écarteurs, ciseaux, annulation, reprise | C173 conservé ; démonstration C190 approuvée sur le biceps gauche ; réalisme non validé |
 | Explorer l’imagerie | Coupes synchronisées, fenêtre, surfaces et fiches | Recherche et pédagogie, pas diagnostic |
 
 Les fonctions sont étayées par les sources d’interface et des preuves historiques conservées. Aucun nouvel audit complet d’usage n’a été réalisé pour cette publication.
@@ -43,15 +43,19 @@ Le projet est parti d’un outil de révision destiné à une étudiante en méd
 
 Le repérage automatique ne garantit pas une couverture exhaustive du cours. Les questions et photos demandent une vérification. La vitesse varie selon le matériel et le modèle. Cette branche d’origine n’est pas incluse dans le snapshot Atlas actuellement sauvegardé sur GitHub.
 
-## Dissection : parcours réel dans le candidat C186
+## Dissection : démonstration C190 approuvée
 
-![Le sujet sur la table avant les gestes](media/dissection-entry-c186.png)
+![Le sujet sur la table avant les gestes](media/dissection-entry-c190.png)
 
-La [séquence C186 d’environ 89 secondes](media/dissection-c173.webm) montre le corps entier, une approche continue du bras, l’incision au scalpel, la sonde sur les tissus exposés, la traction et les écarteurs, puis une petite coupe du biceps source. Prise native continue, gestes à vitesse normale et parcours préparé avant la prise. Aucun montage des gestes ni chargement de poses pendant le film, aucun masquage de couches pour atteindre le muscle. Sang et repères désactivés dans l’application.
+La [séquence complète C190, 2 min 22 s](media/dissection-c173.webm) montre le corps entier, une approche continue du bras, l’incision au scalpel, le décollement sur les tissus exposés, puis **les deux coins de la peau, de la graisse et du fascia rabattus vers l’arrière**, jusqu’à exposer et inciser le maillage source du biceps gauche. Les écarteurs existants sont réajustés avec la même identité, sans doublon de prise.
 
-Les raccords du visage et des pieds sont traités localement à partir de Z-Anatomy. Yeux et oreilles natifs sont conservés. Les mâchoires suivent les bords déformés ; les manches passent au-dessus du champ. Annulation, rétablissement et sauvegarde/reprise sont vérifiés sur cette séance. Ces modifications de présentation ne remplacent pas une simulation de collision des instruments.
+L’auteur a approuvé cette démonstration avant sa publication. Capture native continue, gestes à vitesse normale et parcours préparé avant la prise : aucun chargement de poses pendant le film, aucune accélération et aucun masquage de couches pour atteindre le muscle. Sang et repères de collision désactivés dans l’application.
 
-Le réalisme des tissus et de l’intérieur reconstruit reste non validé. Des reliefs du modèle source subsistent. Ce parcours précis ne démontre pas la dissection libre de tout le corps. C173 et son [test historique](media/dissection-c173-diagnostic-original.webm) restent conservés, la version stable est intacte. **Le sang reste suspendu.**
+La [suite jusqu’au muscle, 1 min 34 s](media/dissection-c190-suite-muscle.webm) est un extrait contigu de la même prise, à vitesse inchangée, commençant après le rabattement de la peau. Captures réelles : [peau](media/dissection-c190-peau.png), [graisse](media/dissection-c190-graisse.png), [fascia](media/dissection-c190-fascia.png), [second angle](media/dissection-c190-second-angle.png).
+
+Annulation, rétablissement et sauvegarde/reprise dans la même séance ont été vérifiés. Les modifications sont sauvegardées dans le dépôt de code privé. Elles ne remplacent pas une simulation de collision complète des instruments. Les plis et l’intérieur reconstruit restent stylisés ; l’approbation de la vidéo ne vaut pas validation anatomique ni preuve de dissection libre de tout le corps.
+
+C173 et son [test historique](media/dissection-c173-diagnostic-original.webm) restent conservés ; la version stable est intacte. **Le sang reste suspendu.**
 
 ## IA : des entraînements réalisés dans le projet
 
@@ -123,7 +127,7 @@ Application : React, TypeScript, Three.js. Traitement : Python, PyTorch, NIfTI. 
 
 La version stable reste distincte des candidats. Les tests logiciels ne constituent pas une validation médicale. Réalisme, fluidité, complétude pédagogique et robustesse des segmentations restent des chantiers ouverts.
 
-Le snapshot de code privé couvre **l’Atlas C183 et les sources rénales C181/C184/C185**. Il ne contient pas encore l’ensemble des sources QCM local et de toutes les campagnes de rate. Les archives originales restent conservées localement. Aucun modèle n’est modifié pour publier cette page.
+Le snapshot de code privé couvre **l’Atlas C183, les sources rénales C181/C184/C185 et les corrections de dissection C190**. Il ne contient pas encore l’ensemble des sources QCM local et de toutes les campagnes de rate. Les archives originales restent conservées localement. Aucun modèle n’est modifié pour publier cette page.
 
 ## Sources et droits
 
