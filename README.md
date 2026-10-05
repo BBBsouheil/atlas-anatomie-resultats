@@ -45,21 +45,25 @@ Le repérage automatique ne garantit pas une couverture exhaustive du cours. Les
 
 ## Dissection : fonctionnelle, pas encore réaliste
 
-![Biceps gauche exposé dans C173, repères de collision désactivés](media/dissection-clean-c173.png)
+![Vue du corps entier au début de la démonstration C173](media/dissection-live-body.png)
 
-**[Présentation C173, environ 19 secondes, sans repères de collision](media/dissection-clean-steps.webm)** — également dans la [vitrine](https://BBBsouheil.github.io/atlas-anatomie-resultats/#dissection).
+**[Démonstration C173 en mouvement, environ 1 min 29](media/dissection-live-c173.webm)** — également dans la [vitrine](https://BBBsouheil.github.io/atlas-anatomie-resultats/#dissection), avec chapitres et lecture rapide ou normale.
 
-Montage de six états du parcours enregistré, réaffichés dans l’application conservée avec les diagnostics désactivés. Ce n’est pas une nouvelle séquence de gestes continus ni un nouveau test physique. Le [test complet de 3 min 55](media/dissection-c173.webm) reste disponible séparément : ses traits violets étaient des repères de collision et de support activés pour les contrôles.
+La prise montre le corps entier, puis 13 gestes effectués dans C173 : incision au scalpel, décollement à la sonde, traction et relâchement à la pince, maintien par les écarteurs et petite incision du biceps. Le tissu bouge réellement dans la simulation conservée ; aucune reprise d’état ne remplace les mouvements entre les gestes. Les repères de collision et le sang sont désactivés, aucune couche anatomique n’est masquée. La page propose la lecture ×1,5 (environ une minute) et ×1 pour examiner le mouvement enregistré. Cette capture ne modifie pas la physique et ne valide pas son réalisme. Le [test historique de 3 min 55](media/dissection-c173.webm) reste disponible séparément.
 
 C173 part des tissus recouvrants, expose le biceps gauche et incise une petite zone. Annulation, rétablissement et sauvegarde/reprise sont consignés. Ce scénario reste la référence fonctionnelle de développement.
 
-Le réalisme des tissus, de la traction et de l’intérieur reconstruit n’est pas validé. La fluidité reste limitée : environ 27,7 FPS et une pause de 583 ms rapportés pour cet essai. La réussite sur le bras ne démontre pas une dissection libre de tout le corps. **Le chantier du sang reste suspendu.**
+Le réalisme des tissus, de la traction et de l’intérieur reconstruit n’est pas validé. Le test historique C173 rapportait environ 27,7 FPS et une pause de 583 ms ; ces mesures ne concernent pas la nouvelle capture de 89 secondes. La réussite sur le bras ne démontre pas une dissection libre de tout le corps. **Le chantier du sang reste suspendu.**
 
 ## IA : des entraînements réalisés dans le projet
 
 Les maillages de référence de l’Atlas sont adaptés de ressources anatomiques tierces et crédités. Ils ne sont pas générés par les réseaux entraînés ici.
 
-L’IA apprend à segmenter la rate ou les reins dans des CT annotés, depuis une initialisation aléatoire. Le masque revient sur la grille native, puis devient une surface 3D consultable avec les coupes et la fiche anatomique.
+Le point de départ est un scanner CT enregistré au format NIfTI : un volume constitué de nombreuses coupes 2D, avec leur taille et leur position dans l’espace. Un voxel est un petit élément de ce volume, l’équivalent d’un pixel en 3D.
+
+Pour l’apprentissage, les CT publics sont accompagnés d’annotations indiquant où se trouvent les organes. Les réseaux partent de poids aléatoires et ajustent leurs paramètres en comparant leurs prédictions à ces annotations. Les expériences de rate et de reins utilisent des modèles distincts : l’un cherche la rate, l’autre les reins droit et gauche.
+
+Après entraînement, les prédictions sont converties en masques binaires : pour chaque voxel, le masque indique s’il est attribué à l’organe ou non. Le masque est remis sur la grille du scanner d’origine, puis sa frontière sert à reconstruire une surface 3D. Les couleurs affichées sur les coupes montrent les prédictions, pas les annotations de référence. Les surfaces conservent les coordonnées de l’examen ; elles ne sont pas automatiquement alignées sur le corps de référence de l’Atlas.
 
 ```mermaid
 flowchart LR

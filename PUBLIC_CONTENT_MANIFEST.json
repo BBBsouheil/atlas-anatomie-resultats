@@ -1,6 +1,6 @@
 {
-  "status": "PROJECT_SHOWCASE_MEDIA_REVISION_V2",
-  "atUtc": "2026-10-05T17:10:02.515616+00:00",
+  "status": "PROJECT_SHOWCASE_MEDIA_REVISION_V3",
+  "atUtc": "2026-10-05T18:27:14.621825+00:00",
   "files": [
     {
       "path": ".nojekyll",
@@ -24,8 +24,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 24411,
-      "sha256": "a3f45224e2347b6fffdab167bcaa5f853a99cd13381378e9ec2027ae703d2852"
+      "bytes": 28601,
+      "sha256": "6ca03f6faa10f035a379ef7769d11e2216945adc072f0674a2f34c8800cd03e7"
     },
     {
       "path": "media/atlas-explorer.png",
@@ -56,6 +56,21 @@
       "path": "media/dissection-clean-steps.webm",
       "bytes": 2496118,
       "sha256": "70392312b8412fb9f77eaa3169d75f5da96b382fba5da74194629cf38149b251"
+    },
+    {
+      "path": "media/dissection-live-body.png",
+      "bytes": 376223,
+      "sha256": "fc43bd1632547934c5c362fe81825a9a6bebf5521a072412e6dc691bc6e5e2db"
+    },
+    {
+      "path": "media/dissection-live-c173.webm",
+      "bytes": 25097350,
+      "sha256": "e3804f8a3d2dce982fabb6a4b655bdb8dc47609aca203cea3ee7b3632a3032cd"
+    },
+    {
+      "path": "media/dissection-live-final.png",
+      "bytes": 580426,
+      "sha256": "750e60967e0d85061fcda860da81bdd79606356f8b9feee932e9900e8525b465"
     },
     {
       "path": "media/scanner-axial-zoom.webm",
@@ -104,13 +119,13 @@
     },
     {
       "path": "MEDIA_ATTRIBUTIONS.md",
-      "bytes": 5257,
-      "sha256": "7f6f85b4ddc8d2d82c2bc032216881ac317cb6a50d330f836b36fd1d759c012b"
+      "bytes": 6654,
+      "sha256": "59cb2b6eebc94e7c001ef7f5d1d0d19e334410032ceeaebc357eafb66791ab8d"
     },
     {
       "path": "NOTICE_DONNEES_ET_DROITS.txt",
-      "bytes": 3500,
-      "sha256": "4c69b1e91577f6240a365e2897fec97fe3f3f6e581a9bc12bee6c056b8915f30"
+      "bytes": 4205,
+      "sha256": "2196f30b6493ae1356d53e92335164434086443f8cce25816c184bc269f5990a"
     },
     {
       "path": "notices/HUMAN-ATLAS-MIT.txt",
@@ -124,13 +139,13 @@
     },
     {
       "path": "presentation.js",
-      "bytes": 4353,
-      "sha256": "d1deb6cfc00d5488573676b25877abd1e60828f039001c67ef56bb4a13f8acab"
+      "bytes": 7589,
+      "sha256": "8802f22317117e43e1515f5675f56926808e162a0624b7e88d3f54ae59568f85"
     },
     {
       "path": "README.md",
-      "bytes": 10659,
-      "sha256": "ea4ba98b61c58466a75cb502dbe6f40e758abf5d8651684b92d2f0497fa1b402"
+      "bytes": 11930,
+      "sha256": "ab5dc9a3a5d0f1f940384e64695bc242f1b51f6e583efeca3d41244073a0b0c5"
     },
     {
       "path": "RESULTATS_IA_DETAILS.md",
@@ -144,8 +159,8 @@
     },
     {
       "path": "styles.css",
-      "bytes": 14963,
-      "sha256": "bcb5f07381576630137431fb0624c2ddafbf34c7864dc1572630f6a5a1e31a9a"
+      "bytes": 15848,
+      "sha256": "aa9bf646ad4af9e75de98914d1a9551a4fa3fbae37dd8974d3e2b7ba80a4eb98"
     }
   ],
   "sourceApplicationCodeIncluded": false,
@@ -158,8 +173,16 @@
     "knownC182Case": true
   },
   "historicalOriginalMediaUnmodified": true,
-  "cleanDissectionCapture": "Recorded C173 checkpoint montage; diagnostics off, not new continuous gestures or acceptance test",
-  "scannerMedia": "Five recrops of same9.4s recorded replay, no speed or content modification",
+  "dissectionCapture": "Continuous native WebGL capture on unchanged C173, whole body and 13 ordinary UI gestures. No intermediate checkpoint substitution; diagnostics and blood off; anatomy not hidden.",
+  "dissectionSeconds": 89.103,
+  "videoFileAtRecordedSpeed": true,
+  "videoPlaybackRateDefault": 1.5,
+  "normalSpeedSelectable": true,
+  "dissectionChapters": 7,
+  "newPhysicsOrRealismValidation": false,
+  "previousCheckpointMontageRetained": true,
+  "scannerMedia": "Five recrops of the same9.4s recorded C183 replay; no new CT or inference",
+  "scientificTablesUnchanged": true,
   "newInference": false,
   "stableInstallationModified": false,
   "existingMITAndThirdPartyNoticesPreserved": true

@@ -1,6 +1,6 @@
 # Attributions des captures et vidéos
 
-Les médias historiques sont copiés sans retouche ; la révision décrite ci-dessous ajoute des recadrages vidéo et une nouvelle capture des états de dissection conservés. Les versions et transformations sont indiquées. Aucun examen personnel, annotation native ni poids de modèle n’est publié.
+Les médias historiques sont copiés sans retouche ; les révisions décrites ci-dessous ajoutent des recadrages vidéo, une reprise des états conservés et une démonstration continue de gestes. Les versions et transformations sont indiquées. Aucun examen personnel, annotation native ni poids de modèle n’est publié.
 
 | Média | Origine | Statut de preuve |
 | --- | --- | --- |
@@ -19,6 +19,14 @@ Les médias historiques sont copiés sans retouche ; la révision décrite ci-de
 - `media/scanner-initial-c183.png` et `scanner-fiche-c183.png` : captures existantes copiées sans retouche. Les aperçus de coupes sont agrandis par l’affichage de la page ; la source PNG complète est conservée.
 
 Ces ajouts servent uniquement à rendre la présentation lisible. Ils n’installent aucun candidat, ne modifient aucun modèle et ne lancent aucune inférence.
+
+## Nouvelle démonstration continue de la dissection
+
+- `media/dissection-live-c173.webm` : **89,103 secondes**, capture native du rendu de C173 pendant une présentation du corps et 13 gestes exécutés par les contrôles ordinaires : scalpel, sonde, pince, écarteurs, puis petite incision du biceps. Une configuration intacte est préparée avant les gestes ; aucune pose ou incision enregistrée n’est substituée pendant les manipulations. Repères et sang désactivés, aucun élément anatomique masqué. L’application et sa physique ne sont pas modifiées.
+- `media/dissection-live-body.png` et `media/dissection-live-final.png` : images extraites de cette vidéo native, aux mêmes dimensions, sans retouche anatomique.
+- La vidéo est conservée à sa vitesse d’enregistrement. La page applique une lecture ×1,5, réglable à ×1 ; les boutons de chapitre sont des raccourcis de lecture approximatifs, pas des mesures des performances.
+
+Cette démonstration remplace le montage d’états de 19 secondes dans la présentation principale. Elle documente des mouvements existants, sans nouvelle validation du réalisme ni extension démontrée à tout le corps. Les premières captures incomplètes et la tentative de composition présentant une image vide sont conservées dans les preuves locales ; elles ne sont pas publiées comme démonstrations finales.
 
 ## Modèles et documentation anatomiques
 
