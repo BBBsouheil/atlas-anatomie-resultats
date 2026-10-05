@@ -1,10 +1,12 @@
 ATLAS ANATOMIE — PRÉSENTATION PUBLIQUE EN DÉVELOPPEMENT
 
-Contenu : vitrine statique (HTML/CSS/JavaScript de présentation), README, bilans rénaux, agrégats numériques, deux graphiques scientifiques existants, captures et deux démonstrations déjà enregistrées. Le code de l’application et des expériences est sauvegardé dans un dépôt privé distinct.
+Contenu : vitrine statique (HTML/CSS/JavaScript de présentation), README, bilans rénaux, agrégats numériques, deux graphiques scientifiques existants, captures et démonstrations. Les deux vidéos historiques restent conservées. La révision ajoute une capture propre des états C173 et cinq recadrages d’un même extrait C183 ; il ne s’agit pas de nouveaux tests ni de nouveaux examens. Le code de l’application et des expériences est sauvegardé dans un dépôt privé distinct.
 
 Les captures anatomiques montrent l’Atlas Studio V5 et le prototype C173. Elles contiennent des représentations adaptées de sources tierces, avec leurs conditions et crédits. Aucun maillage brut n’est distribué. Les notices existantes sont conservées dans notices/ ; les attributions sont décrites dans MEDIA_ATTRIBUTIONS.md. La licence MIT du logiciel ne couvre pas automatiquement ces ressources.
 
 EXCEPTION PUBLIQUE EXPLICITE POUR L’IMAGERIE : scanner-c183.png et scanner-c183.webm montrent des coupes et prédictions du cas public TotalSegmentator s0970, déjà examiné dans C182. Dataset v2.0.1, CC BY 4.0, attribution Wasserthal et al. Aucun scanner personnel ni import médical privé n’est publié. Aucun CT brut, annotation native, poids, masque natif ou surface exportée n’est fourni. L’identifiant d’un volume public peut être visible ; il ne certifie pas une identité patient.
+
+Les captures scanner-initial-c183.png, scanner-fiche-c183.png et les cinq vidéos scanner-*-zoom.webm ont la même provenance publique. Les vidéos sont recadrées sans modifier les coupes ou masques. La séquence dissection-clean-steps.webm réaffiche les états enregistrés C173 sans repères de collision ; ce montage ne remplace pas la preuve continue d’origine et n’établit aucune nouvelle amélioration de la physique ou des performances.
 
 Les bilans C182/C184/C185 et preuves historiques sont repris sans nouveau calcul scientifique, réentraînement ou modification de modèle. Les résultats faibles et négatifs sont conservés. Les 30 volumes C185 ne certifient pas 30 patients indépendants. Références vides, couvertures limitées et HD95 indéfinis restent distingués. Le replay C183 ne constitue pas un contrôle visuel des résultats C185.
 

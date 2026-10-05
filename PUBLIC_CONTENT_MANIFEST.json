@@ -1,6 +1,6 @@
 {
-  "status": "COMPLETE_PROJECT_SHOWCASE_READY_FOR_AUTHORIZED_GITHUB_PUBLICATION",
-  "atUtc": "2026-10-05T16:14:36.428674+00:00",
+  "status": "PROJECT_SHOWCASE_MEDIA_REVISION_V2",
+  "atUtc": "2026-10-05T17:10:02.515616+00:00",
   "files": [
     {
       "path": ".nojekyll",
@@ -24,8 +24,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 21538,
-      "sha256": "37767fc9a03d94ad8f20ed7697fe150a2010c6539a21ed91a58b0a08d249af3d"
+      "bytes": 24411,
+      "sha256": "a3f45224e2347b6fffdab167bcaa5f853a99cd13381378e9ec2027ae703d2852"
     },
     {
       "path": "media/atlas-explorer.png",
@@ -48,6 +48,21 @@
       "sha256": "1510404d6c38a06174c3d698a0160cebc2d0e1041b3db370a7ca5078e68adaad"
     },
     {
+      "path": "media/dissection-clean-c173.png",
+      "bytes": 678132,
+      "sha256": "e1753012cf9088427dc59c29d93671414de5578833e2e08d74c4cab352e9ab57"
+    },
+    {
+      "path": "media/dissection-clean-steps.webm",
+      "bytes": 2496118,
+      "sha256": "70392312b8412fb9f77eaa3169d75f5da96b382fba5da74194629cf38149b251"
+    },
+    {
+      "path": "media/scanner-axial-zoom.webm",
+      "bytes": 248559,
+      "sha256": "80cbe0f2f87f3bef904df2f271a5213778399439f18bdf9453df0cae21e23ca8"
+    },
+    {
       "path": "media/scanner-c183.png",
       "bytes": 902882,
       "sha256": "2669aa02113924fe737190ea371381bf871da100d65bff0639cac85d0266edf8"
@@ -58,14 +73,44 @@
       "sha256": "43de5380fac655951566e162b6e38c2dcde4d81894032dd0195ccf2c1a2bebd2"
     },
     {
+      "path": "media/scanner-coronal-zoom.webm",
+      "bytes": 318388,
+      "sha256": "4c27c92181961364009a0e819d900ee7bd301e9233c4785339a4382f1afa5fb5"
+    },
+    {
+      "path": "media/scanner-fiche-c183.png",
+      "bytes": 1073830,
+      "sha256": "3e79fbe39a95ebf89192bf26d89a6040786b8ac4ae70746ead2685e6e43da3c0"
+    },
+    {
+      "path": "media/scanner-initial-c183.png",
+      "bytes": 720413,
+      "sha256": "6f7df210f693471db7ba9a69bf2d2fcf6ad5789cde43a7b6c08e57969607751b"
+    },
+    {
+      "path": "media/scanner-overview-zoom.webm",
+      "bytes": 1016493,
+      "sha256": "d6d0d0b3c43a17c75c4ea2ad8f1c7852212fcacc51f9b65feba21e4ff4033695"
+    },
+    {
+      "path": "media/scanner-sagittal-zoom.webm",
+      "bytes": 282000,
+      "sha256": "15627a9cda6043e64cbc844910f9a9c8f5c5c23c5fb213c6c7445dee891884db"
+    },
+    {
+      "path": "media/scanner-surface-zoom.webm",
+      "bytes": 259152,
+      "sha256": "9b661abe7cea7a82b390bd9655a78da60928b332ff2b04f067404e8c18c570aa"
+    },
+    {
       "path": "MEDIA_ATTRIBUTIONS.md",
-      "bytes": 3577,
-      "sha256": "f186ad555d9ffebbcb6d54e78527e09fb9469f092979000f61f093849d9659cd"
+      "bytes": 5257,
+      "sha256": "7f6f85b4ddc8d2d82c2bc032216881ac317cb6a50d330f836b36fd1d759c012b"
     },
     {
       "path": "NOTICE_DONNEES_ET_DROITS.txt",
-      "bytes": 2861,
-      "sha256": "12baaffbbde0c755a2a3d8bfe60f9f1de9469a813fa8f24aaa983b6a8cb64947"
+      "bytes": 3500,
+      "sha256": "4c69b1e91577f6240a365e2897fec97fe3f3f6e581a9bc12bee6c056b8915f30"
     },
     {
       "path": "notices/HUMAN-ATLAS-MIT.txt",
@@ -79,13 +124,13 @@
     },
     {
       "path": "presentation.js",
-      "bytes": 2002,
-      "sha256": "3eeb74b166bc1fc91fe87d17d61b05049101be2287052c200a29f096b2e646ea"
+      "bytes": 4353,
+      "sha256": "d1deb6cfc00d5488573676b25877abd1e60828f039001c67ef56bb4a13f8acab"
     },
     {
       "path": "README.md",
-      "bytes": 9808,
-      "sha256": "411211c1f87edc678edfdf2920b584ccbfc9cdcaacd658dbedd76cc2cae13ebd"
+      "bytes": 10659,
+      "sha256": "ea4ba98b61c58466a75cb502dbe6f40e758abf5d8651684b92d2f0497fa1b402"
     },
     {
       "path": "RESULTATS_IA_DETAILS.md",
@@ -99,8 +144,8 @@
     },
     {
       "path": "styles.css",
-      "bytes": 12274,
-      "sha256": "8f976c988200a96a42438fdf9a3289801b5b52bf2431082208bceb99b860d05e"
+      "bytes": 14963,
+      "sha256": "bcb5f07381576630137431fb0624c2ddafbf34c7864dc1572630f6a5a1e31a9a"
     }
   ],
   "sourceApplicationCodeIncluded": false,
@@ -112,9 +157,10 @@
     "licence": "CC BY 4.0",
     "knownC182Case": true
   },
-  "scope": "Actual historical app screenshots, two preserved demonstrations, app capabilities and ML history; not an application install or clinical validation",
-  "scienceExecuted": false,
-  "privatePathAndCredentialMarkerScanHits": [],
-  "mediaUnmodified": true,
-  "originalDraftBackupPreserved": true
+  "historicalOriginalMediaUnmodified": true,
+  "cleanDissectionCapture": "Recorded C173 checkpoint montage; diagnostics off, not new continuous gestures or acceptance test",
+  "scannerMedia": "Five recrops of same9.4s recorded replay, no speed or content modification",
+  "newInference": false,
+  "stableInstallationModified": false,
+  "existingMITAndThirdPartyNoticesPreserved": true
 }

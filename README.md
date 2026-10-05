@@ -45,9 +45,11 @@ Le repérage automatique ne garantit pas une couverture exhaustive du cours. Les
 
 ## Dissection : fonctionnelle, pas encore réaliste
 
-![Biceps gauche exposé dans C173](media/dissection-c173.png)
+![Biceps gauche exposé dans C173, repères de collision désactivés](media/dissection-clean-c173.png)
 
-**[Séquence C173, environ 3 min 55](media/dissection-c173.webm)** — également dans la [vitrine](https://BBBsouheil.github.io/atlas-anatomie-resultats/#dissection).
+**[Présentation C173, environ 19 secondes, sans repères de collision](media/dissection-clean-steps.webm)** — également dans la [vitrine](https://BBBsouheil.github.io/atlas-anatomie-resultats/#dissection).
+
+Montage de six états du parcours enregistré, réaffichés dans l’application conservée avec les diagnostics désactivés. Ce n’est pas une nouvelle séquence de gestes continus ni un nouveau test physique. Le [test complet de 3 min 55](media/dissection-c173.webm) reste disponible séparément : ses traits violets étaient des repères de collision et de support activés pour les contrôles.
 
 C173 part des tissus recouvrants, expose le biceps gauche et incise une petite zone. Annulation, rétablissement et sauvegarde/reprise sont consignés. Ce scénario reste la référence fonctionnelle de développement.
 
@@ -71,6 +73,8 @@ flowchart LR
 ![Lecteur CT et surfaces rénales dans C183](media/scanner-c183.png)
 
 **[Démonstration C183, environ 12 secondes](media/scanner-c183.webm)** : examen **public TotalSegmentator**, déjà examiné dans C182. Elle montre l’intégration et les fragments de prédiction conservés ; ce n’est pas un nouveau test externe ni une validation clinique. Aucun CT brut n’est distribué ici.
+
+La [vitrine agrandie](https://BBBsouheil.github.io/atlas-anatomie-resultats/#ia) permet maintenant de choisir les trois coupes, la sagittale, la coronale, l’axiale ou les surfaces 3D. Ces vues sont des recadrages de 9,4 secondes du même enregistrement, sans modification des coupes ou prédictions. Des captures des coupes et de la fiche complètent la vidéo.
 
 ### Rate : progrès de validation et limite externe
 
