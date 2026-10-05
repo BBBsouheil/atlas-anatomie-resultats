@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Atlas Anatomie : exploration 3D, révisions, prototype de dissection et segmentation médicale entraînée dans le projet. Démonstrations et résultats, avec leurs limites.">
+  <title>Atlas Anatomie — explorer, comprendre, apprendre</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="presentation.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+<header class="topbar">
+  <a class="brand" href="#"><span class="brand-mark" aria-hidden="true">A</span><span>Atlas Anatomie<small>Projet de BBBsouheil</small></span></a>
+  <nav aria-label="Navigation principale"><a href="#application">L’application</a><a href="#dissection">Dissection</a><a href="#ia">L’IA</a><a href="#bilan">État du projet</a></nav>
+  <span class="status">En développement</span>
+</header>
+<main id="contenu">
+<section class="hero wrap">
+  <div class="hero-copy">
+    <p class="eyebrow">Anatomie · pédagogie · ingénierie</p>
+    <h1>Explorer le corps.<br>Comprendre ses structures.<br><em>Apprendre en manipulant.</em></h1>
+    <p class="lead">Un projet local qui relie un atlas humain en 3D, des outils de révision et une chaîne expérimentale d’analyse de scanners.</p>
+    <p>Tourner autour d’un organe, consulter sa fiche, tester ses connaissances, examiner des couches ou retrouver une segmentation dans les coupes : plusieurs façons d’étudier réunies dans un même environnement.</p>
+    <div class="actions"><a class="button primary" href="#application">Découvrir l’application <span aria-hidden="true">↓</span></a><a class="button" href="#ia">Comprendre le travail IA</a></div>
+    <p class="caption">Cette page présente des fonctions implémentées et des preuves conservées. L’application reste un prototype pédagogique, sans validation clinique.</p>
+  </div>
+  <figure class="hero-visual">
+    <div class="window-label"><span class="dot"></span> Exploration anatomique · capture réelle</div>
+    <a href="media/atlas-explorer.png" aria-label="Agrandir la capture de l’explorateur"><img src="media/atlas-explorer.png" width="1500" height="1000" alt="Interface réelle de l’Atlas : corps humain en 3D, systèmes anatomiques à gauche et fiches à droite."></a>
+    <figcaption>Capture de l’Atlas Studio V5. Les exemples historiques sont identifiés ; ils ne constituent pas un nouveau test de la dernière version.</figcaption>
+  </figure>
+</section>
+
+<div class="project-map wrap" aria-label="Les trois composantes du projet">
+  <a href="#qcm"><span>01</span><strong>QCM local</strong><small>Réviser à partir de ses cours</small></a>
+  <a href="#application"><span>02</span><strong>Atlas anatomique 3D</strong><small>Observer, comprendre et manipuler</small></a>
+  <a href="#ia"><span>03</span><strong>Imagerie & apprentissage</strong><small>Du scanner à une surface 3D</small></a>
+</div>
+
+<section id="application" class="section wrap">
+  <div class="section-heading"><p class="eyebrow">L’application, au-delà de l’IA</p><h2>Un espace pour étudier<br>l’anatomie sous plusieurs angles.</h2><p>Le cœur du projet est l’Atlas. Le module IA le complète ; il ne résume pas tout le travail réalisé.</p></div>
+  <div class="feature-grid">
+    <article><span class="feature-number">01 / EXPLORER</span><h3>Retrouver une structure</h3><p>Recherche par nom, arbre anatomique, rotation, zoom et sélection directe dans le corps 3D.</p><p class="detail">Une même structure peut être retrouvée par son système ou par son nom.</p></article>
+    <article><span class="feature-number">02 / OBSERVER</span><h3>Comprendre les rapports</h3><p>Afficher les couches, masquer des systèmes, isoler un élément, régler sa transparence et utiliser des plans de coupe.</p><p class="detail">Une coupe de visualisation et une incision du prototype sont deux outils différents.</p></article>
+    <article><span class="feature-number">03 / DOCUMENTATION</span><h3>Relier forme et connaissances</h3><p>Fiches avec noms disponibles, repères, relations anatomiques et références. Accès aux structures voisines et aux modules associés.</p><p class="detail">La documentation est inégale : une fiche de groupe ne valide pas chaque sous-structure.</p></article>
+    <article><span class="feature-number">04 / COMPRENDRE</span><h3>Explorer des mécanismes</h3><p>Modules explicatifs : neurone, synapse, néphron, filtration, œil, oreille et péristaltisme.</p><p class="detail">Ce sont des représentations pédagogiques simplifiées, pas une microscopie réelle.</p></article>
+    <article><span class="feature-number">05 / MOUVEMENT</span><h3>Voir une fonction en action</h3><p>Animations articulaires et respiratoires, contrôle de la lecture et parcours de certains trajets nerveux.</p><p class="detail">Mouvements illustratifs ; les trajets animés et la biomécanique restent à améliorer.</p></article>
+    <article><span class="feature-number">06 / RÉVISER</span><h3>Passer de l’observation au rappel</h3><p>Identifier une structure, la retrouver sur le corps, répondre à un QCM, consulter sa correction et filtrer la séance.</p><p class="detail">Favoris, éléments appris ou à revoir, suivi et export de supports sont présents dans l’interface.</p></article>
+  </div>
+  <div class="gallery">
+    <div class="gallery-head"><h3>Des écrans de l’application réelle</h3><div class="tabs" role="tablist" aria-label="Captures de l’application"><button id="tab-explorer" role="tab" aria-selected="true" aria-controls="capture-panel" data-view="explorer">Explorer</button><button id="tab-quiz" role="tab" aria-selected="false" aria-controls="capture-panel" tabindex="-1" data-view="quiz">Réviser</button><button id="tab-dissection" role="tab" aria-selected="false" aria-controls="capture-panel" tabindex="-1" data-view="dissection">Disséquer</button></div></div>
+    <figure id="capture-panel" role="tabpanel" aria-labelledby="tab-explorer"><a id="capture-link" href="media/atlas-explorer.png" aria-label="Agrandir la capture affichée"><img id="capture-image" src="media/atlas-explorer.png" width="1500" height="1000" alt="Exploration du corps et navigation par systèmes dans l’Atlas Studio V5."></a><figcaption id="capture-caption">Explorer — Atlas Studio V5 : navigation par systèmes et sélection 3D. Capture historique conservée.</figcaption></figure>
+    <p class="caption">Les images ne sont ni des maquettes ni des rendus générés pour cette page. Cliquez sur une capture pour l’ouvrir en grand.</p>
+  </div>
+</section>
+
+<section id="qcm" class="section soft">
+  <div class="wrap two-columns">
+    <div><p class="eyebrow">L’origine du projet</p><h2>QCM local : travailler<br>à partir de ses propres cours.</h2><p class="lead">Le projet a commencé par un outil de révision destiné à une étudiante en médecine à Angers, puis s’est étendu à l’exploration anatomique.</p><p>Le bouton de l’application QCM ouvre l’Atlas comme module distinct. QCM local prépare ses questions avec Ollama sur la machine, à partir de supports que l’utilisateur est autorisé à importer.</p><p class="caption">Cette branche d’origine est distincte du snapshot de sources Atlas actuellement sauvegardé sur GitHub.</p></div>
+    <div class="steps-list"><article><span>1</span><div><h3>Importer et choisir</h3><p>Documents textuels ou PDF exploitables ; sélection d’un chapitre et des sous-parties à travailler.</p></div></article><article><span>2</span><div><h3>Préparer une série</h3><p>Nombre, difficulté, type de réponse et option photos. Historique utilisé pour varier les passages et écarter des questions répétées.</p></div></article><article><span>3</span><div><h3>Répondre et retrouver la source</h3><p>Correction, passage cité, lignes du texte importé et page quand cette information a été conservée.</p></div></article><article><span>4</span><div><h3>Suivre ce qui reste à revoir</h3><p>Bilan des réponses et des points repérés par sous-partie. Le repérage automatique n’est pas une preuve de couverture exhaustive du cours.</p></div></article></div>
+  </div>
+  <div class="wrap note">Les questions et photos générées doivent être vérifiées. Un petit PC peut utiliser un mode adapté, mais la qualité et le temps d’attente dépendent du modèle et du matériel ; aucune vitesse universelle n’est promise.</div>
+</section>
+
+<section id="dissection" class="section wrap">
+  <div class="section-heading"><p class="eyebrow">Prototype de manipulation</p><h2>Une table de dissection fonctionnelle.<br>Un réalisme encore à construire.</h2><p>Scalpel, sonde, pince, écarteurs et ciseaux sont présents, avec annulation, rétablissement et sauvegarde. La preuve fonctionnelle conservée concerne un parcours précis sur le bras gauche.</p></div>
+  <div class="video-layout">
+    <figure><video controls preload="none" playsinline poster="media/dissection-c173.png" aria-label="Parcours de dissection C173"><source src="media/dissection-c173.webm" type="video/webm"><p><a href="media/dissection-c173.webm">Ouvrir la vidéo de dissection</a></p></video><figcaption>C173 · séquence continue d’environ 3 min 55 : partir des couches recouvrantes, exposer le biceps puis inciser une petite zone. Séquence instrumentée, avec traits de diagnostic visibles, déjà conservée ; aucune nouvelle manipulation.</figcaption></figure>
+    <div class="context-card"><span class="pill">Référence fonctionnelle : C173</span><h3>Ce que la vidéo établit</h3><ul><li>Un parcours d’accès au biceps et une incision utilisable sur ce scénario.</li><li>Des contrôles d’annulation, rétablissement et sauvegarde/reprise consignés dans le bilan.</li><li>Une interaction avec plusieurs couches, au-delà du simple masquage d’un organe.</li></ul><h3>Ce qu’elle n’établit pas</h3><p>Le rendu et la traction restent stylisés. L’intérieur est reconstruit ; le réalisme n’est pas validé. La réussite sur le bras ne démontre pas une dissection libre de tout le corps.</p><p>La fluidité reste limitée : le bilan rapporte environ 27,7 FPS et une pause de 583 ms, dans les conditions de cet essai.</p><p class="suspended">Le chantier du sang est suspendu. Aucune amélioration du liquide n’est revendiquée.</p></div>
+  </div>
+</section>
+
+<section id="ia" class="section dark">
+  <div class="wrap">
+    <div class="section-heading"><p class="eyebrow">Apprentissage automatique réalisé dans le projet</p><h2>Du scanner à un organe<br>que l’on peut examiner en 3D.</h2><p>Les modèles apprennent à délimiter la rate ou les reins dans un CT. Leurs prédictions deviennent des masques et des surfaces consultables dans l’Atlas, à côté des coupes et des fiches anatomiques.</p></div>
+    <div class="distinction"><div><span>Atlas de référence</span><strong>Des modèles anatomiques issus de sources tierces</strong><p>Maillages adaptés avec leurs crédits. Ils ne sont pas générés par notre réseau.</p></div><div><span>Segmentation expérimentale</span><strong>Des réseaux entraînés depuis une initialisation aléatoire</strong><p>Entraînements locaux enregistrés. Aucun modèle préentraîné ne remplace ces expériences.</p></div></div>
+    <div class="pipeline" aria-label="Étapes du traitement"><ol><li><strong>CT</strong><span>Volume & géométrie</span></li><li><strong>Prétraitement</strong><span>Règles figées</span></li><li><strong>Réseau</strong><span>Rate ou reins</span></li><li><strong>Masque</strong><span>Grille native</span></li><li><strong>Surface 3D</strong><span>Coordonnées physiques</span></li><li><strong>Atlas</strong><span>Coupes & fiche</span></li></ol></div>
+    <p class="caption">La surface conserve les coordonnées de l’examen. Elle n’est pas automatiquement recalée sur le corps de référence.</p>
+    <div class="video-layout imaging-demo">
+      <figure><video controls preload="none" playsinline poster="media/scanner-c183.png" aria-label="Lecteur de scanner et surfaces rénales C183"><source src="media/scanner-c183.webm" type="video/webm"><p><a href="media/scanner-c183.webm">Ouvrir la démonstration du lecteur CT</a></p></video><figcaption>C183 · démonstration d’environ 12 secondes : coupes CT et surfaces rénales enregistrées, rotation et consultation. Cas de la source publique TotalSegmentator, déjà examiné dans C182. Ce n’est pas un nouveau test externe.</figcaption></figure>
+      <div><span class="pill">Intégration réelle · prototype de recherche</span><h3>Ce que l’on peut consulter</h3><ul><li>Trois plans de coupe avec réglages de fenêtre.</li><li>Les deux reins affichés séparément.</li><li>Des surfaces, des fiches liées et un export NIfTI natif.</li><li>Un résultat sauvegardé rouvert sans relancer le réseau.</li></ul><p>Les fragments et erreurs de segmentation ne sont pas masqués dans la preuve. Une surface 3D plausible ne suffit pas à déclarer une prédiction correcte.</p><a class="text-link" href="MEDIA_ATTRIBUTIONS.md">Provenance des médias et crédits ↗</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="experiences" class="section wrap">
+  <div class="section-heading"><p class="eyebrow">Ce qui a été appris, mesuré et conservé</p><h2>Deux organes.<br>Des expériences, pas une promesse.</h2><p>Les bilans distinguent l’apprentissage, la validation utilisée pour développer les modèles et les évaluations sur une autre source. Les mauvais résultats font partie du projet.</p></div>
+  <div class="research-grid">
+    <article class="research-card"><div class="research-title"><span class="organ-mark" aria-hidden="true">R</span><div><p class="eyebrow">Rate · C176 à C180</p><h3>Du modèle 2D au contexte 2,5D</h3></div></div><p>Deux premières expériences U-Net 2D avec ou sans augmentations ; puis un réseau utilisant trois coupes voisines. Split MSD documenté : 27 cas d’apprentissage, 7 de validation et 7 de test interne.</p><p>Le test interne reste distinct du choix de checkpoint. C177 a été sélectionné sur les mêmes cas de validation déjà consultés.</p><h4>Validation native connue · 7 cas</h4><div class="table-scroll"><table><thead><tr><th>Modèle</th><th>Dice ↑</th><th>HD95 ↓</th></tr></thead><tbody><tr><th>C176 2D retenu</th><td>0,951</td><td>11,68 mm</td></tr><tr><th>C177 2,5D</th><td>0,958</td><td>2,77 mm</td></tr></tbody></table></div><h4>Autre source : AMOS22 · 29 paires valides</h4><div class="table-scroll"><table><thead><tr><th>Modèle</th><th>Dice ↑</th><th>HD95 ↓</th></tr></thead><tbody><tr><th>C176</th><td>0,771</td><td>24,99 mm</td></tr><tr><th>C177</th><td>0,809</td><td>37,41 mm</td></tr></tbody></table></div><p class="result-note">Meilleur recouvrement moyen, mais erreur de contour moyenne plus grande. Sur 30 CT sélectionnés, une tentative C177 interrompue est conservée : 29 paires, sans remplacement du cas.</p><p class="caption">Le pire Dice C177 externe est 0,105 et son HD95 maximal atteint 307,78 mm. Les groupes observables ne certifient pas 30 identités indépendantes.</p></article>
+    <article class="research-card"><div class="research-title"><span class="organ-mark" aria-hidden="true">K</span><div><p class="eyebrow">Reins · C181 à C185</p><h3>Étendre le pipeline, tester les limites</h3></div></div><p>Un U-Net 2D à deux sorties apprend les côtés droit et gauche. Un candidat 2,5D est ensuite entraîné ; ses résultats moins bons sont conservés et il ne remplace pas le modèle précédent.</p><p>C181 : 24 volumes d’apprentissage et 6 de validation AMOS, identités indépendantes non certifiées. C182 révèle une généralisation externe insuffisante.</p><h4>C185 · 30 nouveaux CT, mêmes références</h4><div class="table-scroll"><table><thead><tr><th>Côté / modèle</th><th>Dice ↑</th><th>HD95 ↓</th></tr></thead><tbody><tr><th>Droit · C181</th><td>0,745</td><td>71,23 mm</td></tr><tr><th>Droit · C184</th><td>0,701</td><td>204,11 mm</td></tr><tr><th>Gauche · C181</th><td>0,642</td><td>55,38 mm</td></tr><tr><th>Gauche · C184</th><td>0,634</td><td>123,92 mm</td></tr></tbody></table></div><p class="caption">Moyennes primaires sur 26 références non vides à droite et 27 à gauche. Les 4 références vides à droite et 3 à gauche sont décrites séparément. Aucune certification de 30 patients indépendants.</p><p class="result-note">Les 60 prédictions ont abouti ; la qualité se dégrade néanmoins. C184 n’est pas promu. Le plus grand HD95 droit atteint 513,67 mm.</p><a class="text-link" href="RESULTATS_IA_DETAILS.md">Lire le bilan détaillé et les limites ↗</a></article>
+  </div>
+  <div class="metric-guide"><p><strong>Dice / IoU</strong> : recouvrement avec l’annotation ; plus proche de 1 est préférable.</p><p><strong>HD95</strong> : distance entre contours, en millimètres ; plus faible est préférable. Il met en évidence des erreurs qu’un Dice moyen peut cacher.</p></div>
+  <div class="methods"><h3>Un protocole et une trace pour chaque expérience</h3><div><p>Seeds, configurations, pertes, hyperparamètres, checkpoints et métriques sont enregistrés. Les modèles, seuils et prétraitements sont figés avant l’évaluation externe.</p><p>Les cohortes sont auditées avant les prédictions. Les exclusions, interruptions, références vides et limites de couverture sont conservées ; les identités non certifiées sont signalées.</p><p>Les poids, CT bruts, annotations et imports privés ne sont pas publiés ici. Cette vitrine montre les bilans et des captures d’une source publique avec attribution.</p></div></div>
+</section>
+
+<section id="ingenierie" class="section soft">
+  <div class="wrap"><div class="section-heading"><p class="eyebrow">Le travail logiciel derrière les images</p><h2>Relier le modèle à une application<br>demande aussi de l’ingénierie.</h2></div><div class="engineering-grid"><article><h3>Préserver l’espace réel</h3><p>Retour sur la grille native, coordonnées physiques, latéralité et parité des exports. Les deux côtés partagent un CT au lieu de le convertir deux fois.</p></article><article><h3>Gérer un calcul local</h3><p>État de tâche, annulation, verrou de worker, sauvegarde et reprise d’un résultat. Les contrôles logiciels sont distincts de l’évaluation du modèle.</p></article><article><h3>Mesurer tout le parcours</h3><p>Dans C182, l’inférence moyenne prend environ 1,44 s ; prédiction et export prennent 40,40 s. Rééchantillonnage et reconstruction coûtent aussi du temps.</p><p class="caption">29 cas, même benchmark ; chargement initial du modèle exclu. Scoring avec annotation inclus : 48,17 s. Ce ne sont pas des performances universelles.</p></article></div><p class="caption tech-stack">Application : React · TypeScript · Three.js &nbsp;/&nbsp; Traitement : Python · PyTorch · NIfTI &nbsp;/&nbsp; Révision QCM : moteur local Ollama</p></div>
+</section>
+
+<section id="bilan" class="section wrap">
+  <div class="section-heading"><p class="eyebrow">État du projet · bilan C185</p><h2>Ce qui existe.<br>Ce qui reste à démontrer.</h2></div>
+  <div class="state-grid"><article><span class="state-label">Implémenté / preuves conservées</span><h3>Une base de travail tangible</h3><ul><li>Exploration 3D, couches, recherche, fiches et révision.</li><li>QCM local sur supports autorisés, lié à l’Atlas.</li><li>Parcours de dissection C173 sur le biceps gauche.</li><li>Entraînements de rate et de reins exécutés dans le projet.</li><li>Lecteur CT, masques natifs, reconstruction et surfaces 3D.</li><li>Protocoles, résultats positifs et négatifs conservés.</li></ul></article><article><span class="state-label amber">Non validé / à poursuivre</span><h3>Des limites explicites</h3><ul><li>Réalisme des tissus, traction et fluidité de la dissection.</li><li>Qualité des animations et de certains trajets illustratifs.</li><li>Complétude des fiches et pertinence des QCM générés.</li><li>Généralisation et robustesse des segmentations.</li><li>Extension démontrée à tous les organes ou toutes les régions.</li><li>Usage clinique : non validé. Sang : chantier suspendu.</li></ul></article></div>
+  <div class="closing"><h3>Projet en cours, code privé, résultats visibles.</h3><p>La version stable reste distincte des candidats expérimentaux. Le snapshot privé sauvegardé couvre l’Atlas C183 et les sources rénales C181/C184/C185 ; il ne constitue pas encore une archive complète de QCM local et de toutes les campagnes de rate.</p><div class="actions"><a class="button primary" href="https://github.com/BBBsouheil/atlas-anatomie-resultats">Voir le dépôt de présentation ↗</a><a class="button" href="results-public.json">Consulter les agrégats enregistrés</a></div></div>
+</section>
+</main>
+<footer class="footer wrap"><div><strong>Atlas Anatomie</strong><p>Une application pédagogique et un sous-projet de recherche, en développement.</p><p>Les captures montrent des versions identifiées. La vitrine n’exécute pas l’application et ne distribue pas de données CT brutes.</p></div><div><a href="MEDIA_ATTRIBUTIONS.md">Crédits des captures et vidéos</a><a href="NOTICE_DONNEES_ET_DROITS.txt">Données et droits</a><a href="README.md">Présentation écrite</a><a href="#">Retour en haut ↑</a></div></footer>
+</body>
+</html>

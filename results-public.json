@@ -1,0 +1,1568 @@
+{
+  "status": "work_in_progress_public_presentation_draft",
+  "asOfUtc": "2026-10-05T14:03:55.821277+00:00",
+  "newExperimentsPerformed": false,
+  "C182": {
+    "evaluatedCTs": 29,
+    "primaryDefinition": "Nonempty published reference per side; empty/limited references retained separately",
+    "primary": {
+      "right": {
+        "referenceCount": 27,
+        "dice": {
+          "count": 27,
+          "mean": 0.6926729205866783,
+          "median": 0.8048831621216275,
+          "min": 0.0,
+          "max": 0.9595501395748336
+        },
+        "iou": {
+          "count": 27,
+          "mean": 0.5910618618874316,
+          "median": 0.6734765477411345,
+          "min": 0.0,
+          "max": 0.9222454402394036
+        },
+        "hd95_mm": {
+          "count": 27,
+          "mean": 124.95495246552734,
+          "median": 34.5,
+          "min": 2.1213203435596424,
+          "max": 468.4596290344414
+        }
+      },
+      "left": {
+        "referenceCount": 27,
+        "dice": {
+          "count": 27,
+          "mean": 0.738662393577421,
+          "median": 0.8527897161884849,
+          "min": 0.11146309984747155,
+          "max": 0.9472269242258289
+        },
+        "iou": {
+          "count": 27,
+          "mean": 0.6263126860359978,
+          "median": 0.7433595463903608,
+          "min": 0.05902087475149105,
+          "max": 0.8997446325546202
+        },
+        "hd95_mm": {
+          "count": 27,
+          "mean": 115.85991526560312,
+          "median": 29.47032405658275,
+          "min": 2.1213203435596424,
+          "max": 399.26494962618494
+        }
+      }
+    },
+    "sourceAggregateSha256": "89c1ef8eb28b54b97ba31c10a3925e6fef9bd865047d8297ce8766a2db20a553",
+    "patientConfidenceIntervals": null,
+    "independentPatientsCertified": false
+  },
+  "C184": {
+    "scope": "development_validation_not_independent",
+    "pairedVolumes": 6,
+    "pairedSides": 12,
+    "recordedSummaryAllSides": {
+      "slots": 12,
+      "emptyPredictionsC181": 0,
+      "emptyPredictionsC184": 0,
+      "metrics": {
+        "dice": {
+          "c181": {
+            "slots": 12,
+            "definedCount": 12,
+            "undefinedCount": 0,
+            "mean": 0.8667183417388573,
+            "median": 0.9123714817263546,
+            "min": 0.64374769339388,
+            "max": 0.9631945821448727
+          },
+          "c184": {
+            "slots": 12,
+            "definedCount": 12,
+            "undefinedCount": 0,
+            "mean": 0.851959757964029,
+            "median": 0.9097420906339062,
+            "min": 0.6864758539065495,
+            "max": 0.9472943044051566
+          },
+          "pairedDelta": {
+            "slots": 12,
+            "definedCount": 12,
+            "undefinedCount": 0,
+            "mean": -0.014758583774828258,
+            "median": -0.02198748454810645,
+            "min": -0.10992978700149914,
+            "max": 0.09194011102816269
+          },
+          "pairedImprovedSlots": 4,
+          "pairedUnchangedSlots": 0,
+          "pairedWorsenedSlots": 8,
+          "deltaUnit": "percentage_points",
+          "pairedMeanDeltaDisplay": -1.4758583774828258
+        },
+        "iou": {
+          "c181": {
+            "slots": 12,
+            "definedCount": 12,
+            "undefinedCount": 0,
+            "mean": 0.7770384597487161,
+            "median": 0.8389665159079436,
+            "min": 0.4746518699052329,
+            "max": 0.9290022655721305
+          },
+          "c184": {
+            "slots": 12,
+            "definedCount": 12,
+            "undefinedCount": 0,
+            "mean": 0.7548798748298818,
+            "median": 0.8344363882795747,
+            "min": 0.5226214195971928,
+            "max": 0.899866228870242
+          },
+          "pairedDelta": {
+            "slots": 12,
+            "definedCount": 12,
+            "undefinedCount": 0,
+            "mean": -0.02215858491883434,
+            "median": -0.03326230992264129,
+            "min": -0.13906799003820525,
+            "max": 0.15260084037377386
+          },
+          "pairedImprovedSlots": 4,
+          "pairedUnchangedSlots": 0,
+          "pairedWorsenedSlots": 8,
+          "deltaUnit": "percentage_points",
+          "pairedMeanDeltaDisplay": -2.215858491883434
+        },
+        "hd95_mm": {
+          "c181": {
+            "slots": 12,
+            "definedCount": 12,
+            "undefinedCount": 0,
+            "mean": 16.526714439103927,
+            "median": 5.425491787249731,
+            "min": 1.5703125,
+            "max": 50.778473481787785
+          },
+          "c184": {
+            "slots": 12,
+            "definedCount": 12,
+            "undefinedCount": 0,
+            "mean": 31.044593423880322,
+            "median": 12.92900347229068,
+            "min": 5.241774726609318,
+            "max": 150.31501596686644
+          },
+          "pairedDelta": {
+            "slots": 12,
+            "definedCount": 12,
+            "undefinedCount": 0,
+            "mean": 14.517878984776395,
+            "median": 2.4651351364796485,
+            "min": -25.839016224616117,
+            "max": 126.58568439689144
+          },
+          "pairedImprovedSlots": 3,
+          "pairedUnchangedSlots": 0,
+          "pairedWorsenedSlots": 9,
+          "deltaUnit": "mm",
+          "pairedMeanDeltaDisplay": 14.517878984776395
+        }
+      }
+    },
+    "integratedIntoApplication": false,
+    "causalAttribution": false,
+    "sourceAggregateSha256": "245f4e84af80c71a552144de41ed3edc07dce7a84ef84523b1dbca49d617cfc5",
+    "patientConfidenceIntervals": null
+  },
+  "C185": {
+    "status": "DESCRIPTIVE_EXTERNAL_COMPARISON",
+    "sourceReportAtUtc": "2026-10-05T13:48:05.111896+00:00",
+    "selectedVolumes": 30,
+    "selectedModelVolumePairs": 60,
+    "successfulPredictions": 60,
+    "partialPredictionSeal": false,
+    "primaryStratum": "reference_present",
+    "models": {
+      "C181": {
+        "selectedVolumes": 30,
+        "scoredVolumes": 30,
+        "failedPredictionVolumes": 0,
+        "failedScoringVolumes": 0,
+        "independentPatientCountGuaranteed": null,
+        "confidenceIntervals": null,
+        "confidenceIntervalReason": "Observable groups alone do not establish independent sampling units; descriptive statistics only.",
+        "emptyReferenceMeaning": "Published binary reference contains no foreground; no clinical kidney absence is inferred.",
+        "sides": {
+          "right": {
+            "selectedVolumes": 30,
+            "scoredVolumes": 30,
+            "emptyReferenceVolumes": 4,
+            "emptyPredictionVolumes": 2,
+            "bothEmptyVolumes": 2,
+            "hd95NullAllReferences": 2,
+            "strata": {
+              "reference_present": {
+                "dice": {
+                  "count": 26,
+                  "mean": 0.7454773414528665,
+                  "median": 0.8662589317319459,
+                  "min": 0.0,
+                  "max": 0.9595373562412998,
+                  "q25": 0.7219267243582039,
+                  "q75": 0.9067234103745734
+                },
+                "iou": {
+                  "count": 26,
+                  "mean": 0.645944122587472,
+                  "median": 0.7640717306856871,
+                  "min": 0.0,
+                  "max": 0.922221823144889,
+                  "q25": 0.5648569347372301,
+                  "q75": 0.8294268775323188
+                },
+                "hd95_mm": {
+                  "count": 26,
+                  "mean": 71.23018092771427,
+                  "median": 17.873565526007916,
+                  "min": 2.1213203435596424,
+                  "max": 483.9988893197159,
+                  "q25": 6.2294840864896,
+                  "q75": 103.55251327421018
+                },
+                "predictedVolumeMl": {
+                  "count": 26,
+                  "mean": 97.07032211538464,
+                  "median": 107.1005625,
+                  "min": 1.832625,
+                  "max": 180.849375,
+                  "q25": 41.2880625,
+                  "q75": 150.157125
+                },
+                "referenceVolumeMl": {
+                  "count": 26,
+                  "mean": 125.80611057692307,
+                  "median": 133.5808125,
+                  "min": 2.43,
+                  "max": 241.974,
+                  "q25": 106.5740625,
+                  "q75": 167.75015625
+                },
+                "count": 26,
+                "hd95NullVolumes": 0
+              },
+              "reference_empty": {
+                "dice": {
+                  "count": 4,
+                  "mean": 0.5,
+                  "median": 0.5,
+                  "min": 0.0,
+                  "max": 1.0,
+                  "q25": 0.0,
+                  "q75": 1.0
+                },
+                "iou": {
+                  "count": 4,
+                  "mean": 0.5,
+                  "median": 0.5,
+                  "min": 0.0,
+                  "max": 1.0,
+                  "q25": 0.0,
+                  "q75": 1.0
+                },
+                "hd95_mm": {
+                  "count": 2,
+                  "mean": 0.0,
+                  "median": 0.0,
+                  "min": 0.0,
+                  "max": 0.0,
+                  "q25": 0.0,
+                  "q75": 0.0
+                },
+                "predictedVolumeMl": {
+                  "count": 4,
+                  "mean": 0.2278125,
+                  "median": 0.0185625,
+                  "min": 0.0,
+                  "max": 0.874125,
+                  "q25": 0.0,
+                  "q75": 0.246375
+                },
+                "referenceVolumeMl": {
+                  "count": 4,
+                  "mean": 0.0,
+                  "median": 0.0,
+                  "min": 0.0,
+                  "max": 0.0,
+                  "q25": 0.0,
+                  "q75": 0.0
+                },
+                "count": 4,
+                "hd95NullVolumes": 2
+              },
+              "coverage_full": {
+                "dice": {
+                  "count": 0,
+                  "mean": null,
+                  "median": null,
+                  "min": null,
+                  "max": null,
+                  "q25": null,
+                  "q75": null
+                },
+                "iou": {
+                  "count": 0,
+                  "mean": null,
+                  "median": null,
+                  "min": null,
+                  "max": null,
+                  "q25": null,
+                  "q75": null
+                },
+                "hd95_mm": {
+                  "count": 0,
+                  "mean": null,
+                  "median": null,
+                  "min": null,
+                  "max": null,
+                  "q25": null,
+                  "q75": null
+                },
+                "predictedVolumeMl": {
+                  "count": 0,
+                  "mean": null,
+                  "median": null,
+                  "min": null,
+                  "max": null,
+                  "q25": null,
+                  "q75": null
+                },
+                "referenceVolumeMl": {
+                  "count": 0,
+                  "mean": null,
+                  "median": null,
+                  "min": null,
+                  "max": null,
+                  "q25": null,
+                  "q75": null
+                },
+                "count": 0,
+                "hd95NullVolumes": 0
+              },
+              "coverage_limited": {
+                "dice": {
+                  "count": 10,
+                  "mean": 0.7049498821406602,
+                  "median": 0.8662589317319459,
+                  "min": 0.0,
+                  "max": 1.0,
+                  "q25": 0.7556207227180466,
+                  "q75": 0.8734691065350944
+                },
+                "iou": {
+                  "count": 10,
+                  "mean": 0.637918814993267,
+                  "median": 0.7640717306856871,
+                  "min": 0.0,
+                  "max": 1.0,
+                  "q25": 0.6105048227348251,
+                  "q75": 0.7753817053622736
+                },
+                "hd95_mm": {
+                  "count": 8,
+                  "mean": 24.927694394358518,
+                  "median": 3.75,
+                  "min": 0.0,
+                  "max": 178.02794686743357,
+                  "q25": 1.590990257669732,
+                  "q75": 5.64723544256672
+                },
+                "predictedVolumeMl": {
+                  "count": 10,
+                  "mean": 24.1245,
+                  "median": 3.1066875,
+                  "min": 0.0,
+                  "max": 97.578,
+                  "q25": 0.246375,
+                  "q75": 36.94865625
+                },
+                "referenceVolumeMl": {
+                  "count": 10,
+                  "mean": 28.125225,
+                  "median": 4.046625,
+                  "min": 0.0,
+                  "max": 114.048,
+                  "q25": 0.0,
+                  "q75": 40.348124999999996
+                },
+                "count": 10,
+                "hd95NullVolumes": 2
+              },
+              "coverage_unknown": {
+                "dice": {
+                  "count": 20,
+                  "mean": 0.7166456028183962,
+                  "median": 0.8487277188078849,
+                  "min": 0.0,
+                  "max": 0.9595373562412998,
+                  "q25": 0.6117600918432057,
+                  "q75": 0.9185491032500364
+                },
+                "iou": {
+                  "count": 20,
+                  "mean": 0.6207679518670802,
+                  "median": 0.7380133268530554,
+                  "min": 0.0,
+                  "max": 0.922221823144889,
+                  "q25": 0.4411426025329207,
+                  "q75": 0.8493705472314005
+                },
+                "hd95_mm": {
+                  "count": 20,
+                  "mean": 82.62815744828515,
+                  "median": 25.277863524044605,
+                  "min": 2.1213203435596424,
+                  "max": 483.9988893197159,
+                  "q25": 9.458861741659085,
+                  "q75": 125.26766750655929
+                },
+                "predictedVolumeMl": {
+                  "count": 20,
+                  "mean": 114.17473125,
+                  "median": 127.85849999999999,
+                  "min": 9.088875,
+                  "max": 180.849375,
+                  "q25": 81.00084375,
+                  "q75": 159.17681249999998
+                },
+                "referenceVolumeMl": {
+                  "count": 20,
+                  "mean": 149.48533125000003,
+                  "median": 151.878375,
+                  "min": 67.878,
+                  "max": 241.974,
+                  "q25": 126.43171874999999,
+                  "q75": 175.34643749999998
+                },
+                "count": 20,
+                "hd95NullVolumes": 0
+              }
+            }
+          },
+          "left": {
+            "selectedVolumes": 30,
+            "scoredVolumes": 30,
+            "emptyReferenceVolumes": 3,
+            "emptyPredictionVolumes": 2,
+            "bothEmptyVolumes": 2,
+            "hd95NullAllReferences": 1,
+            "strata": {
+              "reference_present": {
+                "dice": {
+                  "count": 27,
+                  "mean": 0.6424268631282148,
+                  "median": 0.6579651467319753,
+                  "min": 0.01752755278183508,
+                  "max": 0.9492262113592952,
+                  "q25": 0.5369518280368022,
+                  "q75": 0.8271402006990755
+                },
+                "iou": {
+                  "count": 27,
+                  "mean": 0.5177442869530849,
+                  "median": 0.4902742616033755,
+                  "min": 0.00884125920964501,
+                  "max": 0.9033592402292667,
+                  "q25": 0.3675261648504844,
+                  "q75": 0.7053870178851798
+                },
+                "hd95_mm": {
+                  "count": 27,
+                  "mean": 55.37637868531289,
+                  "median": 20.457272545478784,
+                  "min": 2.1213203435596424,
+                  "max": 450.0397481689214,
+                  "q25": 7.648529270389178,
+                  "q75": 67.44094729094718
+                },
+                "predictedVolumeMl": {
+                  "count": 27,
+                  "mean": 79.05299999999998,
+                  "median": 69.59925,
+                  "min": 0.39825,
+                  "max": 175.699125,
+                  "q25": 31.537687499999997,
+                  "q75": 118.5451875
+                },
+                "referenceVolumeMl": {
+                  "count": 27,
+                  "mean": 122.6925,
+                  "median": 125.712,
+                  "min": 0.8235,
+                  "max": 225.09225,
+                  "q25": 84.796875,
+                  "q75": 166.8954375
+                },
+                "count": 27,
+                "hd95NullVolumes": 0
+              },
+              "reference_empty": {
+                "dice": {
+                  "count": 3,
+                  "mean": 0.6666666666666666,
+                  "median": 1.0,
+                  "min": 0.0,
+                  "max": 1.0,
+                  "q25": 0.5,
+                  "q75": 1.0
+                },
+                "iou": {
+                  "count": 3,
+                  "mean": 0.6666666666666666,
+                  "median": 1.0,
+                  "min": 0.0,
+                  "max": 1.0,
+                  "q25": 0.5,
+                  "q75": 1.0
+                },
+                "hd95_mm": {
+                  "count": 2,
+                  "mean": 0.0,
+                  "median": 0.0,
+                  "min": 0.0,
+                  "max": 0.0,
+                  "q25": 0.0,
+                  "q75": 0.0
+                },
+                "predictedVolumeMl": {
+                  "count": 3,
+                  "mean": 0.03825,
+                  "median": 0.0,
+                  "min": 0.0,
+                  "max": 0.11475,
+                  "q25": 0.0,
+                  "q75": 0.057375
+                },
+                "referenceVolumeMl": {
+                  "count": 3,
+                  "mean": 0.0,
+                  "median": 0.0,
+                  "min": 0.0,
+                  "max": 0.0,
+                  "q25": 0.0,
+                  "q75": 0.0
+                },
+                "count": 3,
+                "hd95NullVolumes": 1
+              },
+              "coverage_full": {
+                "dice": {
+                  "count": 0,
+                  "mean": null,
+                  "median": null,
+                  "min": null,
+                  "max": null,
+                  "q25": null,
+                  "q75": null
+                },
+                "iou": {
+                  "count": 0,
+                  "mean": null,
+                  "median": null,
+                  "min": null,
+                  "max": null,
+                  "q25": null,
+                  "q75": null
+                },
+                "hd95_mm": {
+                  "count": 0,
+                  "mean": null,
+                  "median": null,
+                  "min": null,
+                  "max": null,
+                  "q25": null,
+                  "q75": null
+                },
+                "predictedVolumeMl": {
+                  "count": 0,
+                  "mean": null,
+                  "median": null,
+                  "min": null,
+                  "max": null,
+                  "q25": null,
+                  "q75": null
+                },
+                "referenceVolumeMl": {
+                  "count": 0,
+                  "mean": null,
+                  "median": null,
+                  "min": null,
+                  "max": null,
+                  "q25": null,
+                  "q75": null
+                },
+                "count": 0,
+                "hd95NullVolumes": 0
+              },
+              "coverage_limited": {
+                "dice": {
+                  "count": 11,
+                  "mean": 0.5763960326138148,
+                  "median": 0.5911602209944752,
+                  "min": 0.0,
+                  "max": 1.0,
+                  "q25": 0.36403338092734405,
+                  "q75": 0.8822027904154448
+                },
+                "iou": {
+                  "count": 11,
+                  "mean": 0.48798888958168046,
+                  "median": 0.4196078431372549,
+                  "min": 0.0,
+                  "max": 1.0,
+                  "q25": 0.22309613514609697,
+                  "q75": 0.7955281516824089
+                },
+                "hd95_mm": {
+                  "count": 10,
+                  "mean": 14.50949161475145,
+                  "median": 7.33496990633253,
+                  "min": 0.0,
+                  "max": 72.49199155263808,
+                  "q25": 2.677386360737623,
+                  "q75": 17.953304751776926
+                },
+                "predictedVolumeMl": {
+                  "count": 11,
+                  "mean": 21.958056818181813,
+                  "median": 19.348875,
+                  "min": 0.0,
+                  "max": 79.275375,
+                  "q25": 0.2565,
+                  "q75": 31.537687499999997
+                },
+                "referenceVolumeMl": {
+                  "count": 11,
+                  "mean": 42.20314772727273,
+                  "median": 28.947375,
+                  "min": 0.0,
+                  "max": 95.1885,
+                  "q25": 0.41175,
+                  "q75": 81.752625
+                },
+                "count": 11,
+                "hd95NullVolumes": 1
+              },
+              "coverage_unknown": {
+                "dice": {
+                  "count": 19,
+                  "mean": 0.6844825760899915,
+                  "median": 0.6996881902039755,
+                  "min": 0.24411389996525423,
+                  "max": 0.9492262113592952,
+                  "q25": 0.6009180110695584,
+                  "q75": 0.870123418745202
+                },
+                "iou": {
+                  "count": 19,
+                  "mean": 0.5584851559123584,
+                  "median": 0.5380926212719188,
+                  "min": 0.13902604500395763,
+                  "max": 0.9033592402292667,
+                  "q25": 0.42980207317719565,
+                  "q75": 0.7715134654379465
+                },
+                "hd95_mm": {
+                  "count": 19,
+                  "mean": 71.05617412399651,
+                  "median": 36.50268808348704,
+                  "min": 4.5,
+                  "max": 450.0397481689214,
+                  "q25": 9.662586302918802,
+                  "q75": 89.40366384428079
+                },
+                "predictedVolumeMl": {
+                  "count": 19,
+                  "mean": 99.63195394736843,
+                  "median": 98.28675,
+                  "min": 25.606125,
+                  "max": 175.699125,
+                  "q25": 65.49525,
+                  "q75": 135.8589375
+                },
+                "referenceVolumeMl": {
+                  "count": 19,
+                  "mean": 149.91909868421052,
+                  "median": 159.40125,
+                  "min": 63.5985,
+                  "max": 225.09225,
+                  "q25": 122.7841875,
+                  "q75": 174.4081875
+                },
+                "count": 19,
+                "hd95NullVolumes": 0
+              }
+            }
+          }
+        }
+      },
+      "C184": {
+        "selectedVolumes": 30,
+        "scoredVolumes": 30,
+        "failedPredictionVolumes": 0,
+        "failedScoringVolumes": 0,
+        "independentPatientCountGuaranteed": null,
+        "confidenceIntervals": null,
+        "confidenceIntervalReason": "Observable groups alone do not establish independent sampling units; descriptive statistics only.",
+        "emptyReferenceMeaning": "Published binary reference contains no foreground; no clinical kidney absence is inferred.",
+        "sides": {
+          "right": {
+            "selectedVolumes": 30,
+            "scoredVolumes": 30,
+            "emptyReferenceVolumes": 4,
+            "emptyPredictionVolumes": 0,
+            "bothEmptyVolumes": 0,
+            "hd95NullAllReferences": 4,
+            "strata": {
+              "reference_present": {
+                "dice": {
+                  "count": 26,
+                  "mean": 0.7011302161540236,
+                  "median": 0.7704278441832711,
+                  "min": 0.0,
+                  "max": 0.9386543468790209,
+                  "q25": 0.6171851654727836,
+                  "q75": 0.8734299123868233
+                },
+                "iou": {
+                  "count": 26,
+                  "mean": 0.5817046943951448,
+                  "median": 0.627363966652803,
+                  "min": 0.0,
+                  "max": 0.8844002367360966,
+                  "q25": 0.4463355084910839,
+                  "q75": 0.7753011090269686
+                },
+                "hd95_mm": {
+                  "count": 26,
+                  "mean": 204.1116775748418,
+                  "median": 182.7462574376445,
+                  "min": 7.5,
+                  "max": 513.6725853994297,
+                  "q25": 87.91825175497357,
+                  "q75": 297.7293509869705
+                },
+                "predictedVolumeMl": {
+                  "count": 26,
+                  "mean": 106.76384134615384,
+                  "median": 121.7008125,
+                  "min": 3.70575,
+                  "max": 212.96925,
+                  "q25": 44.184656249999996,
+                  "q75": 157.0404375
+                },
+                "referenceVolumeMl": {
+                  "count": 26,
+                  "mean": 125.80611057692307,
+                  "median": 133.5808125,
+                  "min": 2.43,
+                  "max": 241.974,
+                  "q25": 106.5740625,
+                  "q75": 167.75015625
+                },
+                "count": 26,
+                "hd95NullVolumes": 0
+              },
+              "reference_empty": {
+                "dice": {
+                  "count": 4,
+                  "mean": 0.0,
+                  "median": 0.0,
+                  "min": 0.0,
+                  "max": 0.0,
+                  "q25": 0.0,
+                  "q75": 0.0
+                },
+                "iou": {
+                  "count": 4,
+                  "mean": 0.0,
+                  "median": 0.0,
+                  "min": 0.0,
+                  "max": 0.0,
+                  "q25": 0.0,
+                  "q75": 0.0
+                },
+                "hd95_mm": {
+                  "count": 0,
+                  "mean": null,
+                  "median": null,
+                  "min": null,
+                  "max": null,
+                  "q25": null,
+                  "q75": null
+                },
+                "predictedVolumeMl": {
+                  "count": 4,
+                  "mean": 13.618125000000001,
+                  "median": 10.934999999999999,
+                  "min": 8.02575,
+                  "max": 24.57675,
+                  "q25": 9.126843749999999,
+                  "q75": 15.42628125
+                },
+                "referenceVolumeMl": {
+                  "count": 4,
+                  "mean": 0.0,
+                  "median": 0.0,
+                  "min": 0.0,
+                  "max": 0.0,
+                  "q25": 0.0,
+                  "q75": 0.0
+                },
+                "count": 4,
+                "hd95NullVolumes": 4
+              },
+              "coverage_full": {
+                "dice": {
+                  "count": 0,
+                  "mean": null,
+                  "median": null,
+                  "min": null,
+                  "max": null,
+                  "q25": null,
+                  "q75": null
+                },
+                "iou": {
+                  "count": 0,
+                  "mean": null,
+                  "median": null,
+                  "min": null,
+                  "max": null,
+                  "q25": null,
+                  "q75": null
+                },
+                "hd95_mm": {
+                  "count": 0,
+                  "mean": null,
+                  "median": null,
+                  "min": null,
+                  "max": null,
+                  "q25": null,
+                  "q75": null
+                },
+                "predictedVolumeMl": {
+                  "count": 0,
+                  "mean": null,
+                  "median": null,
+                  "min": null,
+                  "max": null,
+                  "q25": null,
+                  "q75": null
+                },
+                "referenceVolumeMl": {
+                  "count": 0,
+                  "mean": null,
+                  "median": null,
+                  "min": null,
+                  "max": null,
+                  "q25": null,
+                  "q75": null
+                },
+                "count": 0,
+                "hd95NullVolumes": 0
+              },
+              "coverage_limited": {
+                "dice": {
+                  "count": 10,
+                  "mean": 0.3951889466379922,
+                  "median": 0.48705850536988937,
+                  "min": 0.0,
+                  "max": 0.7973798699711591,
+                  "q25": 0.0,
+                  "q75": 0.7197753964991116
+                },
+                "iou": {
+                  "count": 10,
+                  "mean": 0.3029565174298011,
+                  "median": 0.3267916197926181,
+                  "min": 0.0,
+                  "max": 0.663035525567027,
+                  "q25": 0.0,
+                  "q75": 0.5622308236360221
+                },
+                "hd95_mm": {
+                  "count": 6,
+                  "mean": 168.300941887498,
+                  "median": 158.5594163205393,
+                  "min": 7.5,
+                  "max": 339.2907491746725,
+                  "q25": 17.156127577627437,
+                  "q75": 321.5456327145699
+                },
+                "predictedVolumeMl": {
+                  "count": 10,
+                  "mean": 21.8311875,
+                  "median": 18.4764375,
+                  "min": 3.70575,
+                  "max": 70.82775,
+                  "q25": 8.39278125,
+                  "q75": 26.05921875
+                },
+                "referenceVolumeMl": {
+                  "count": 10,
+                  "mean": 28.125225,
+                  "median": 4.046625,
+                  "min": 0.0,
+                  "max": 114.048,
+                  "q25": 0.0,
+                  "q75": 40.348124999999996
+                },
+                "count": 10,
+                "hd95NullVolumes": 4
+              },
+              "coverage_unknown": {
+                "dice": {
+                  "count": 20,
+                  "mean": 0.7138748076812347,
+                  "median": 0.8387477413325659,
+                  "min": 0.0,
+                  "max": 0.9386543468790209,
+                  "q25": 0.6214327764816899,
+                  "q75": 0.8825417393643608
+                },
+                "iou": {
+                  "count": 20,
+                  "mean": 0.6047378439987876,
+                  "median": 0.7228421434352741,
+                  "min": 0.0,
+                  "max": 0.8844002367360966,
+                  "q25": 0.45079192564915327,
+                  "q75": 0.7899876325288924
+                },
+                "hd95_mm": {
+                  "count": 20,
+                  "mean": 214.8548982810449,
+                  "median": 182.7462574376445,
+                  "min": 9.246621004453464,
+                  "max": 513.6725853994297,
+                  "q25": 130.459293766501,
+                  "q75": 296.1187121837086
+                },
+                "predictedVolumeMl": {
+                  "count": 20,
+                  "mean": 130.601025,
+                  "median": 140.79825,
+                  "min": 12.214125,
+                  "max": 212.96925,
+                  "q25": 108.49275,
+                  "q75": 166.02215625
+                },
+                "referenceVolumeMl": {
+                  "count": 20,
+                  "mean": 149.48533125000003,
+                  "median": 151.878375,
+                  "min": 67.878,
+                  "max": 241.974,
+                  "q25": 126.43171874999999,
+                  "q75": 175.34643749999998
+                },
+                "count": 20,
+                "hd95NullVolumes": 0
+              }
+            }
+          },
+          "left": {
+            "selectedVolumes": 30,
+            "scoredVolumes": 30,
+            "emptyReferenceVolumes": 3,
+            "emptyPredictionVolumes": 0,
+            "bothEmptyVolumes": 0,
+            "hd95NullAllReferences": 3,
+            "strata": {
+              "reference_present": {
+                "dice": {
+                  "count": 27,
+                  "mean": 0.6338349477359512,
+                  "median": 0.7174225807212434,
+                  "min": 0.0,
+                  "max": 0.9414938702941845,
+                  "q25": 0.5498108156754812,
+                  "q75": 0.8181558982142252
+                },
+                "iou": {
+                  "count": 27,
+                  "mean": 0.5229825258536929,
+                  "median": 0.5593600588451637,
+                  "min": 0.0,
+                  "max": 0.8894552840764829,
+                  "q25": 0.38132133328696627,
+                  "q75": 0.6923040518555039
+                },
+                "hd95_mm": {
+                  "count": 27,
+                  "mean": 123.92119464184918,
+                  "median": 102.49512183513906,
+                  "min": 2.1213203435596424,
+                  "max": 359.98874981281887,
+                  "q25": 31.228104330394846,
+                  "q75": 217.7372760584849
+                },
+                "predictedVolumeMl": {
+                  "count": 27,
+                  "mean": 96.58462499999999,
+                  "median": 83.97675,
+                  "min": 0.54675,
+                  "max": 184.548375,
+                  "q25": 39.997125,
+                  "q75": 160.8035625
+                },
+                "referenceVolumeMl": {
+                  "count": 27,
+                  "mean": 122.6925,
+                  "median": 125.712,
+                  "min": 0.8235,
+                  "max": 225.09225,
+                  "q25": 84.796875,
+                  "q75": 166.8954375
+                },
+                "count": 27,
+                "hd95NullVolumes": 0
+              },
+              "reference_empty": {
+                "dice": {
+                  "count": 3,
+                  "mean": 0.0,
+                  "median": 0.0,
+                  "min": 0.0,
+                  "max": 0.0,
+                  "q25": 0.0,
+                  "q75": 0.0
+                },
+                "iou": {
+                  "count": 3,
+                  "mean": 0.0,
+                  "median": 0.0,
+                  "min": 0.0,
+                  "max": 0.0,
+                  "q25": 0.0,
+                  "q75": 0.0
+                },
+                "hd95_mm": {
+                  "count": 0,
+                  "mean": null,
+                  "median": null,
+                  "min": null,
+                  "max": null,
+                  "q25": null,
+                  "q75": null
+                },
+                "predictedVolumeMl": {
+                  "count": 3,
+                  "mean": 3.765375,
+                  "median": 3.38175,
+                  "min": 3.078,
+                  "max": 4.836375,
+                  "q25": 3.229875,
+                  "q75": 4.1090625
+                },
+                "referenceVolumeMl": {
+                  "count": 3,
+                  "mean": 0.0,
+                  "median": 0.0,
+                  "min": 0.0,
+                  "max": 0.0,
+                  "q25": 0.0,
+                  "q75": 0.0
+                },
+                "count": 3,
+                "hd95NullVolumes": 3
+              },
+              "coverage_full": {
+                "dice": {
+                  "count": 0,
+                  "mean": null,
+                  "median": null,
+                  "min": null,
+                  "max": null,
+                  "q25": null,
+                  "q75": null
+                },
+                "iou": {
+                  "count": 0,
+                  "mean": null,
+                  "median": null,
+                  "min": null,
+                  "max": null,
+                  "q25": null,
+                  "q75": null
+                },
+                "hd95_mm": {
+                  "count": 0,
+                  "mean": null,
+                  "median": null,
+                  "min": null,
+                  "max": null,
+                  "q25": null,
+                  "q75": null
+                },
+                "predictedVolumeMl": {
+                  "count": 0,
+                  "mean": null,
+                  "median": null,
+                  "min": null,
+                  "max": null,
+                  "q25": null,
+                  "q75": null
+                },
+                "referenceVolumeMl": {
+                  "count": 0,
+                  "mean": null,
+                  "median": null,
+                  "min": null,
+                  "max": null,
+                  "q25": null,
+                  "q75": null
+                },
+                "count": 0,
+                "hd95NullVolumes": 0
+              },
+              "coverage_limited": {
+                "dice": {
+                  "count": 11,
+                  "mean": 0.3912923649026798,
+                  "median": 0.34639960678299336,
+                  "min": 0.0,
+                  "max": 0.9402267685481883,
+                  "q25": 0.0006472491909385113,
+                  "q75": 0.7529641996964783
+                },
+                "iou": {
+                  "count": 11,
+                  "mean": 0.31806388332484226,
+                  "median": 0.2094820539496173,
+                  "min": 0.0,
+                  "max": 0.8871961856029771,
+                  "q25": 0.0003238341968911917,
+                  "q75": 0.6054665376460375
+                },
+                "hd95_mm": {
+                  "count": 8,
+                  "mean": 88.024834622827,
+                  "median": 7.788873605350878,
+                  "min": 2.1213203435596424,
+                  "max": 308.63935264317803,
+                  "q25": 5.254712794378079,
+                  "q75": 143.051860692153
+                },
+                "predictedVolumeMl": {
+                  "count": 11,
+                  "mean": 25.583727272727266,
+                  "median": 14.880374999999999,
+                  "min": 0.54675,
+                  "max": 78.732,
+                  "q25": 3.229875,
+                  "q75": 39.997125
+                },
+                "referenceVolumeMl": {
+                  "count": 11,
+                  "mean": 42.20314772727273,
+                  "median": 28.947375,
+                  "min": 0.0,
+                  "max": 95.1885,
+                  "q25": 0.41175,
+                  "q75": 81.752625
+                },
+                "count": 11,
+                "hd95NullVolumes": 3
+              },
+              "coverage_unknown": {
+                "dice": {
+                  "count": 19,
+                  "mean": 0.6741751355232212,
+                  "median": 0.7987324611379572,
+                  "min": 0.0,
+                  "max": 0.9414938702941845,
+                  "q25": 0.6124309777811991,
+                  "q75": 0.8553997024376669
+                },
+                "iou": {
+                  "count": 19,
+                  "mean": 0.5590434463934969,
+                  "median": 0.664908053616927,
+                  "min": 0.0,
+                  "max": 0.8894552840764829,
+                  "q25": 0.4413874579854249,
+                  "q75": 0.7487006002397526
+                },
+                "hd95_mm": {
+                  "count": 19,
+                  "mean": 139.03545149196378,
+                  "median": 122.15840119365501,
+                  "min": 25.675864152935535,
+                  "max": 359.98874981281887,
+                  "q25": 42.53419341728768,
+                  "q75": 217.7372760584849
+                },
+                "predictedVolumeMl": {
+                  "count": 19,
+                  "mean": 123.03473684210526,
+                  "median": 135.745875,
+                  "min": 12.76425,
+                  "max": 184.548375,
+                  "q25": 82.7668125,
+                  "q75": 163.6824375
+                },
+                "referenceVolumeMl": {
+                  "count": 19,
+                  "mean": 149.91909868421052,
+                  "median": 159.40125,
+                  "min": 63.5985,
+                  "max": 225.09225,
+                  "q25": 122.7841875,
+                  "q75": 174.4081875
+                },
+                "count": 19,
+                "hd95NullVolumes": 0
+              }
+            }
+          }
+        }
+      }
+    },
+    "paired": {
+      "selectedVolumes": 30,
+      "pairedScoredVolumes": 30,
+      "unpairedOrFailedVolumes": [],
+      "differenceConvention": "C184 minus C181; descriptive paired volumes, not independent patients",
+      "sides": {
+        "right": {
+          "reference_present": {
+            "count": 26,
+            "differences": {
+              "dice": {
+                "count": 26,
+                "mean": -0.04434712529884281,
+                "median": -0.02407947575387559,
+                "min": -0.4714042148107682,
+                "max": 0.6560821604908444,
+                "q25": -0.1431186920627376,
+                "q75": 0.005453703027878731,
+                "totalPairs": 26,
+                "undefinedPairs": 0
+              },
+              "iou": {
+                "count": 26,
+                "mean": -0.06423942819232724,
+                "median": -0.0412898631023102,
+                "min": -0.5185497084935714,
+                "max": 0.6507601064746936,
+                "q25": -0.1645299823158506,
+                "q75": 0.009250017100347202,
+                "totalPairs": 26,
+                "undefinedPairs": 0
+              },
+              "hd95_mm": {
+                "count": 26,
+                "mean": 132.88149664712753,
+                "median": 107.34063434965665,
+                "min": -170.52794686743357,
+                "max": 399.37120945047093,
+                "q25": 29.21817713716441,
+                "q75": 261.2583954036815,
+                "totalPairs": 26,
+                "undefinedPairs": 0
+              },
+              "predictedVolumeMl": {
+                "count": 26,
+                "mean": 9.693519230769228,
+                "median": 2.025,
+                "min": -81.9855,
+                "max": 117.49725,
+                "q25": -6.827625000000001,
+                "q75": 24.07387499999999,
+                "totalPairs": 26,
+                "undefinedPairs": 0
+              }
+            }
+          },
+          "reference_empty": {
+            "count": 4,
+            "differences": {
+              "dice": {
+                "count": 4,
+                "mean": -0.5,
+                "median": -0.5,
+                "min": -1.0,
+                "max": 0.0,
+                "q25": -1.0,
+                "q75": 0.0,
+                "totalPairs": 4,
+                "undefinedPairs": 0
+              },
+              "iou": {
+                "count": 4,
+                "mean": -0.5,
+                "median": -0.5,
+                "min": -1.0,
+                "max": 0.0,
+                "q25": -1.0,
+                "q75": 0.0,
+                "totalPairs": 4,
+                "undefinedPairs": 0
+              },
+              "hd95_mm": {
+                "count": 0,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "max": null,
+                "q25": null,
+                "q75": null,
+                "totalPairs": 4,
+                "undefinedPairs": 4
+              },
+              "predictedVolumeMl": {
+                "count": 4,
+                "mean": 13.3903125,
+                "median": 10.9164375,
+                "min": 7.151625,
+                "max": 24.57675,
+                "q25": 8.9083125,
+                "q75": 15.3984375,
+                "totalPairs": 4,
+                "undefinedPairs": 0
+              }
+            }
+          },
+          "all": {
+            "count": 30,
+            "differences": {
+              "dice": {
+                "count": 30,
+                "mean": -0.10510084192566381,
+                "median": -0.02407947575387559,
+                "min": -1.0,
+                "max": 0.6560821604908444,
+                "q25": -0.1463289148650963,
+                "q75": 0.0,
+                "totalPairs": 30,
+                "undefinedPairs": 0
+              },
+              "iou": {
+                "count": 30,
+                "mean": -0.12234083776668361,
+                "median": -0.0412898631023102,
+                "min": -1.0,
+                "max": 0.6507601064746936,
+                "q25": -0.19348728789855485,
+                "q75": 0.0,
+                "totalPairs": 30,
+                "undefinedPairs": 0
+              },
+              "hd95_mm": {
+                "count": 26,
+                "mean": 132.88149664712753,
+                "median": 107.34063434965665,
+                "min": -170.52794686743357,
+                "max": 399.37120945047093,
+                "q25": 29.21817713716441,
+                "q75": 261.2583954036815,
+                "totalPairs": 30,
+                "undefinedPairs": 4
+              },
+              "predictedVolumeMl": {
+                "count": 30,
+                "mean": 10.186424999999998,
+                "median": 3.351374999999993,
+                "min": -81.9855,
+                "max": 117.49725,
+                "q25": -5.541750000000011,
+                "q75": 23.97009375,
+                "totalPairs": 30,
+                "undefinedPairs": 0
+              }
+            }
+          }
+        },
+        "left": {
+          "reference_present": {
+            "count": 27,
+            "differences": {
+              "dice": {
+                "count": 27,
+                "mean": -0.008591915392263725,
+                "median": -0.006889545176654632,
+                "min": -0.37881226887100283,
+                "max": 0.4810406964452239,
+                "q25": -0.07551334684306431,
+                "q75": 0.05405725936916739,
+                "totalPairs": 27,
+                "undefinedPairs": 0
+              },
+              "iou": {
+                "count": 27,
+                "mean": 0.005238238900607946,
+                "median": -0.008193590815862626,
+                "min": -0.29857764754292004,
+                "max": 0.4834875289411679,
+                "q25": -0.10253423936454598,
+                "q75": 0.07674686659431787,
+                "totalPairs": 27,
+                "undefinedPairs": 0
+              },
+              "hd95_mm": {
+                "count": 27,
+                "mean": 68.54481595653628,
+                "median": 26.13308711938855,
+                "min": -102.14188625792215,
+                "max": 298.0327509253798,
+                "q25": 2.0072045579174533,
+                "q75": 107.8119187696364,
+                "totalPairs": 27,
+                "undefinedPairs": 0
+              },
+              "predictedVolumeMl": {
+                "count": 27,
+                "mean": 17.531625000000002,
+                "median": 8.788499999999999,
+                "min": -22.528125,
+                "max": 110.13975000000002,
+                "q25": -5.2768125,
+                "q75": 36.790875,
+                "totalPairs": 27,
+                "undefinedPairs": 0
+              }
+            }
+          },
+          "reference_empty": {
+            "count": 3,
+            "differences": {
+              "dice": {
+                "count": 3,
+                "mean": -0.6666666666666666,
+                "median": -1.0,
+                "min": -1.0,
+                "max": 0.0,
+                "q25": -1.0,
+                "q75": -0.5,
+                "totalPairs": 3,
+                "undefinedPairs": 0
+              },
+              "iou": {
+                "count": 3,
+                "mean": -0.6666666666666666,
+                "median": -1.0,
+                "min": -1.0,
+                "max": 0.0,
+                "q25": -1.0,
+                "q75": -0.5,
+                "totalPairs": 3,
+                "undefinedPairs": 0
+              },
+              "hd95_mm": {
+                "count": 0,
+                "mean": null,
+                "median": null,
+                "min": null,
+                "max": null,
+                "q25": null,
+                "q75": null,
+                "totalPairs": 3,
+                "undefinedPairs": 3
+              },
+              "predictedVolumeMl": {
+                "count": 3,
+                "mean": 3.7271250000000005,
+                "median": 3.38175,
+                "min": 2.96325,
+                "max": 4.836375,
+                "q25": 3.1725,
+                "q75": 4.1090625,
+                "totalPairs": 3,
+                "undefinedPairs": 0
+              }
+            }
+          },
+          "all": {
+            "count": 30,
+            "differences": {
+              "dice": {
+                "count": 30,
+                "mean": -0.07439939051970403,
+                "median": -0.007525266909790551,
+                "min": -1.0,
+                "max": 0.4810406964452239,
+                "q25": -0.09703766826648672,
+                "q75": 0.04294612892439881,
+                "totalPairs": 30,
+                "undefinedPairs": 0
+              },
+              "iou": {
+                "count": 30,
+                "mean": -0.061952251656119506,
+                "median": -0.010198238743894444,
+                "min": -1.0,
+                "max": 0.4834875289411679,
+                "q25": -0.13197751537043687,
+                "q75": 0.05573661549565015,
+                "totalPairs": 30,
+                "undefinedPairs": 0
+              },
+              "hd95_mm": {
+                "count": 27,
+                "mean": 68.54481595653628,
+                "median": 26.13308711938855,
+                "min": -102.14188625792215,
+                "max": 298.0327509253798,
+                "q25": 2.0072045579174533,
+                "q75": 107.8119187696364,
+                "totalPairs": 30,
+                "undefinedPairs": 3
+              },
+              "predictedVolumeMl": {
+                "count": 30,
+                "mean": 16.151175000000002,
+                "median": 6.920437500000006,
+                "min": -22.528125,
+                "max": 110.13975000000002,
+                "q25": -3.694781250000001,
+                "q75": 33.71034375,
+                "totalPairs": 30,
+                "undefinedPairs": 0
+              }
+            }
+          }
+        }
+      }
+    },
+    "failuresRetained": [],
+    "independentPatientCountGuaranteed": null,
+    "confidenceIntervals": null,
+    "notes": [
+      "Previously known source, new audited volume IDs; no certified patient independence.",
+      "Context and random seed differ jointly; no isolated causal effect of context.",
+      "Both models unchanged after this evaluation; empty/limited references retained."
+    ],
+    "sourceReportSha256": "45422918d436df22cc1c179e9e1bb61611e6f94d8c1887af847d14aeb3f3a6b8",
+    "sourceScoresSha256": "25279ab80e6a9a518c6c85622bf69664c9332edec6bb97deafe5e16faa2f43e3",
+    "predictionSealSha256": "5b83043ac500fdbedf6ea98571bac849be4690bce3c4edc9593b6d74c68f5e28",
+    "softwareGate": {
+      "predictionAndScoringRecordedComplete": true,
+      "modelQuality": "Mean Dice and HD95 regress for C184 on both sides; left mean IoU improves slightly",
+      "exportsVerifiedByThisPresentation": false,
+      "exportFailureCountEstablishedByThisPresentation": null,
+      "atlasWorkflowVerifiedByThisPresentation": false,
+      "atlasFailureCountEstablishedByThisPresentation": null,
+      "modelPromotedOrInstalled": false
+    },
+    "readScope": {
+      "existingReportAndScoresJSONOnly": true,
+      "medicalImagesRead": false,
+      "referenceArraysRead": false,
+      "modelsRead": false,
+      "metricsRecalculated": false
+    }
+  }
+}

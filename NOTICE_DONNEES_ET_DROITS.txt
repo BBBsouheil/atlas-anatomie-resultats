@@ -1,0 +1,17 @@
+ATLAS ANATOMIE — PRÉSENTATION PUBLIQUE EN DÉVELOPPEMENT
+
+Contenu : vitrine statique (HTML/CSS/JavaScript de présentation), README, bilans rénaux, agrégats numériques, deux graphiques scientifiques existants, captures et deux démonstrations déjà enregistrées. Le code de l’application et des expériences est sauvegardé dans un dépôt privé distinct.
+
+Les captures anatomiques montrent l’Atlas Studio V5 et le prototype C173. Elles contiennent des représentations adaptées de sources tierces, avec leurs conditions et crédits. Aucun maillage brut n’est distribué. Les notices existantes sont conservées dans notices/ ; les attributions sont décrites dans MEDIA_ATTRIBUTIONS.md. La licence MIT du logiciel ne couvre pas automatiquement ces ressources.
+
+EXCEPTION PUBLIQUE EXPLICITE POUR L’IMAGERIE : scanner-c183.png et scanner-c183.webm montrent des coupes et prédictions du cas public TotalSegmentator s0970, déjà examiné dans C182. Dataset v2.0.1, CC BY 4.0, attribution Wasserthal et al. Aucun scanner personnel ni import médical privé n’est publié. Aucun CT brut, annotation native, poids, masque natif ou surface exportée n’est fourni. L’identifiant d’un volume public peut être visible ; il ne certifie pas une identité patient.
+
+Les bilans C182/C184/C185 et preuves historiques sont repris sans nouveau calcul scientifique, réentraînement ou modification de modèle. Les résultats faibles et négatifs sont conservés. Les 30 volumes C185 ne certifient pas 30 patients indépendants. Références vides, couvertures limitées et HD95 indéfinis restent distingués. Le replay C183 ne constitue pas un contrôle visuel des résultats C185.
+
+La dissection reste un prototype fonctionnel limité, sans validation de réalisme ni généralisation à tout le corps. Le sang reste suspendu. Les contrôles logiciels ne constituent pas une validation clinique.
+
+La base Human Atlas conserve ses déclarations MIT existantes. Rendre le code privé ne révoque pas les droits accordés sur d’anciennes versions. Aucune nouvelle licence pour les contributions originales n’est choisie et aucun copyright nominatif n’est inventé.
+
+Les dépendances, données et ressources anatomiques gardent leurs conditions propres. Les notices locales relèvent notamment CC BY-SA 4.0 pour MSD-Spleen, CC BY 4.0 pour TotalSegmentator et de déclarations divergentes pour AMOS22. Aucun média AMOS n’est redistribué ici. Les contributions anatomiques peuvent avoir des licences CC BY / CC BY-SA / non commerciales distinctes. Aucun droit global de redistribution commerciale n’est affirmé.
+
+Les anciens brouillons et reçus restent archivés localement hors du dépôt public. Le snapshot privé couvre Atlas C183 et les sources rénales C181/C184/C185 ; il n’est pas une archive exhaustive des projets historiques.

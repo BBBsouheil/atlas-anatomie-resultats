@@ -1,0 +1,120 @@
+{
+  "status": "COMPLETE_PROJECT_SHOWCASE_READY_FOR_AUTHORIZED_GITHUB_PUBLICATION",
+  "atUtc": "2026-10-05T16:14:36.428674+00:00",
+  "files": [
+    {
+      "path": ".nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "favicon.svg",
+      "bytes": 208,
+      "sha256": "91756c57fbe2b183a69be110a82877a3e7850017dda45ba141eaaa124607c3c1"
+    },
+    {
+      "path": "figures/c182-distributions-positives.png",
+      "bytes": 101293,
+      "sha256": "0f29c5e872a977363505382b2c74799f454ccabb8631de96cbc2060419ed180f"
+    },
+    {
+      "path": "figures/c184-apprentissage-developpement.png",
+      "bytes": 169267,
+      "sha256": "1527b237f9663684198a778a66c056217b2d74ebf0495e9552152074d29f20e9"
+    },
+    {
+      "path": "index.html",
+      "bytes": 21538,
+      "sha256": "37767fc9a03d94ad8f20ed7697fe150a2010c6539a21ed91a58b0a08d249af3d"
+    },
+    {
+      "path": "media/atlas-explorer.png",
+      "bytes": 154867,
+      "sha256": "f132f5a43ef766b72f3e56ef4991dc40f7ea77fe2c840dda255dc10c0fe6cc92"
+    },
+    {
+      "path": "media/atlas-quiz.png",
+      "bytes": 139994,
+      "sha256": "5b1767239f2b641f3687ebf1713ffcce3ce637e11f512b0678898779f822b5e9"
+    },
+    {
+      "path": "media/dissection-c173.png",
+      "bytes": 677409,
+      "sha256": "58f5c85af6450fb4b425156ee64f7bc4a5f08e17a0bdf1a6de65759ea68abbec"
+    },
+    {
+      "path": "media/dissection-c173.webm",
+      "bytes": 18856380,
+      "sha256": "1510404d6c38a06174c3d698a0160cebc2d0e1041b3db370a7ca5078e68adaad"
+    },
+    {
+      "path": "media/scanner-c183.png",
+      "bytes": 902882,
+      "sha256": "2669aa02113924fe737190ea371381bf871da100d65bff0639cac85d0266edf8"
+    },
+    {
+      "path": "media/scanner-c183.webm",
+      "bytes": 3031131,
+      "sha256": "43de5380fac655951566e162b6e38c2dcde4d81894032dd0195ccf2c1a2bebd2"
+    },
+    {
+      "path": "MEDIA_ATTRIBUTIONS.md",
+      "bytes": 3577,
+      "sha256": "f186ad555d9ffebbcb6d54e78527e09fb9469f092979000f61f093849d9659cd"
+    },
+    {
+      "path": "NOTICE_DONNEES_ET_DROITS.txt",
+      "bytes": 2861,
+      "sha256": "12baaffbbde0c755a2a3d8bfe60f9f1de9469a813fa8f24aaa983b6a8cb64947"
+    },
+    {
+      "path": "notices/HUMAN-ATLAS-MIT.txt",
+      "bytes": 1064,
+      "sha256": "db7a953239922e6e6460885afcbd47834fcb89f069b0b8c30f338cd76b322ded"
+    },
+    {
+      "path": "notices/Z-ANATOMY.txt",
+      "bytes": 1981,
+      "sha256": "c191afae8d45bef17610fda1d791be27b790f36589469ee7e7670c7d0706ea1d"
+    },
+    {
+      "path": "presentation.js",
+      "bytes": 2002,
+      "sha256": "3eeb74b166bc1fc91fe87d17d61b05049101be2287052c200a29f096b2e646ea"
+    },
+    {
+      "path": "README.md",
+      "bytes": 9808,
+      "sha256": "411211c1f87edc678edfdf2920b584ccbfc9cdcaacd658dbedd76cc2cae13ebd"
+    },
+    {
+      "path": "RESULTATS_IA_DETAILS.md",
+      "bytes": 11242,
+      "sha256": "58ef44dcce40eeb4d8e4204ac9ee5624ca970bd23b210c9bb4008425cb20200a"
+    },
+    {
+      "path": "results-public.json",
+      "bytes": 53794,
+      "sha256": "b45c18d48f6c24ae54b0f02a30894eb74e24e1eed2e92456f1cc1a376454e580"
+    },
+    {
+      "path": "styles.css",
+      "bytes": 12274,
+      "sha256": "8f976c988200a96a42438fdf9a3289801b5b52bf2431082208bceb99b860d05e"
+    }
+  ],
+  "sourceApplicationCodeIncluded": false,
+  "presentationSourceIncluded": true,
+  "rawCTGTWeightsPrivateImportsIncluded": false,
+  "publicDatasetMediaIncluded": {
+    "source": "TotalSegmentator v2.0.1",
+    "case": "s0970",
+    "licence": "CC BY 4.0",
+    "knownC182Case": true
+  },
+  "scope": "Actual historical app screenshots, two preserved demonstrations, app capabilities and ML history; not an application install or clinical validation",
+  "scienceExecuted": false,
+  "privatePathAndCredentialMarkerScanHits": [],
+  "mediaUnmodified": true,
+  "originalDraftBackupPreserved": true
+}
