@@ -2,7 +2,7 @@
 const views = {
   explorer: {src:'media/atlas-explorer.png', alt:'Exploration du corps et navigation par systèmes dans l’Atlas Studio V5.', caption:'Explorer — Atlas Studio V5 : navigation par systèmes et sélection 3D. Capture historique conservée.'},
   quiz: {src:'media/atlas-quiz.png', alt:'Quiz de l’Atlas Studio V5 : question de repérage avec cible 3D et fiche de la structure.', caption:'Réviser — Atlas Studio V5 : quiz de repérage, correction et fiche liée. Capture historique conservée.'},
-  dissection: {src:'media/dissection-live-final.png', alt:'Biceps exposé pendant la démonstration en mouvement de C173, sans repères de collision.', caption:'Disséquer — C173 : image de la nouvelle démonstration continue sur le bras gauche. Réalisme non validé.'}
+  dissection: {src:'media/dissection-entry-c173.png', alt:'Vue d’ensemble du mode dissection C173 avant incision.', caption:'Disséquer — C173 : vue de la table avant incision. La vidéo de présentation est en reprise ; réalisme non validé.'}
 };
 const tabs = [...document.querySelectorAll('[role="tab"][data-view]')];
 function activate(tab, focus = false) {
@@ -55,25 +55,3 @@ for (const [index, tab] of tabs.entries()) {
     activate(tabs[next], true);
   });
 }
-
-// Continuous dissection walkthrough navigation.
-const dissectionPhases = [{"seconds": 0, "label": "Le corps entier sur la table"}, {"seconds": 3.84, "label": "Repérer le bras gauche"}, {"seconds": 5.61, "label": "Se rapprocher de la zone à ouvrir"}, {"seconds": 7.58, "label": "Scalpel : incision en U"}, {"seconds": 16.08, "label": "Sonde : décoller la peau — côté 1"}, {"seconds": 22.7, "label": "Sonde : décoller la peau — côté 2"}, {"seconds": 28.91, "label": "Pince : soulever la peau"}, {"seconds": 32.22, "label": "Pince relâchée : la peau revient"}, {"seconds": 35.47, "label": "Écarteur : maintenir la peau"}, {"seconds": 40.05, "label": "Sonde : décoller la graisse — côté 1"}, {"seconds": 46.64, "label": "Sonde : décoller la graisse — côté 2"}, {"seconds": 52.68, "label": "Pince : soulever la graisse"}, {"seconds": 55.42, "label": "Pince relâchée : tissu libéré"}, {"seconds": 58.14, "label": "Écarteur : maintenir la graisse"}, {"seconds": 62.41, "label": "Sonde : décoller le fascia — côté 1"}, {"seconds": 69.22, "label": "Sonde : décoller le fascia — côté 2"}, {"seconds": 75.19, "label": "Pince : soulever le fascia"}, {"seconds": 77.99, "label": "Pince relâchée : tissu libéré"}, {"seconds": 80.52, "label": "Scalpel : petite incision du biceps"}, {"seconds": 88.35, "label": "Résultat : biceps exposé et incisé"}];
-const dissectionChapters = [{"seconds": 0, "label": "Corps entier"}, {"seconds": 7.58, "label": "Scalpel"}, {"seconds": 28.91, "label": "Traction de la peau"}, {"seconds": 35.47, "label": "Maintien"}, {"seconds": 40.05, "label": "Graisse"}, {"seconds": 62.41, "label": "Fascia"}, {"seconds": 80.52, "label": "Biceps"}];
-const dissectionVideo = document.querySelector('#dissection-video');
-const dissectionSpeed = document.querySelector('#dissection-speed');
-const chapterControls = document.querySelector('#dissection-chapters');
-function applyDissectionSpeed(){dissectionVideo.defaultPlaybackRate=Number(dissectionSpeed.value);dissectionVideo.playbackRate=Number(dissectionSpeed.value);}
-dissectionSpeed.addEventListener('change',applyDissectionSpeed);
-dissectionVideo.addEventListener('loadedmetadata',applyDissectionSpeed);
-applyDissectionSpeed();
-for(const chapter of dissectionChapters){
- const button=document.createElement('button');button.type='button';button.textContent=chapter.label;button.dataset.dissectionTime=String(chapter.seconds);button.setAttribute('aria-pressed','false');
- button.addEventListener('click',()=>{dissectionVideo.currentTime=chapter.seconds;dissectionVideo.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'center'});});
- chapterControls.append(button);
-}
-dissectionVideo.addEventListener('timeupdate',()=>{
- const time=dissectionVideo.currentTime,phase=[...dissectionPhases].reverse().find(p=>p.seconds<=time)||dissectionPhases[0];
- document.querySelector('#dissection-step').textContent=phase.label;
- const chapter=[...dissectionChapters].reverse().find(p=>p.seconds<=time)||dissectionChapters[0];
- for(const button of chapterControls.children)button.setAttribute('aria-pressed',String(Number(button.dataset.dissectionTime)===chapter.seconds));
-});

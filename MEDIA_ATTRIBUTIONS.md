@@ -50,3 +50,9 @@ Les médias C183 montrent des coupes du cas public **s0970**, avec les prédicti
 La base **[Human Atlas](https://github.com/slorksmo/Human-Atlas)** conserve son [avis MIT original](notices/HUMAN-ATLAS-MIT.txt). Cet avis ne remplace pas les licences des modèles, textes et images.
 
 Les deux graphiques et agrégats rénaux proviennent des bilans déjà enregistrés. Aucun entraînement, score ou prédiction n’a été recalculé pour cette présentation. Voir le [bilan détaillé](RESULTATS_IA_DETAILS.md) et la [notice de droits](NOTICE_DONNEES_ET_DROITS.txt).
+
+## Retrait de la démonstration V3 après revue visuelle
+
+`media/dissection-entry-c173.png` : capture de la vue d’ensemble dans C173, avant incision, dans une séance de présentation isolée. Sang et diagnostics de collision désactivés, anatomie non masquée. Crédits anatomiques identiques aux autres médias C173 ci-dessus. Les indications visibles de la capture ne sont pas un nouveau benchmark.
+
+La vidéo de 89,103 secondes et ses images sont conservées mais retirées de la présentation principale après rejet visuel. De nouvelles prises fixes ont été interrompues lorsque la couche visée n’était plus accessible ou que le contact prévu n’était pas confirmé. Elles restent dans les preuves locales ; aucun parcours complet propre ni amélioration du réalisme n’est revendiqué. La physique et l’installation stable restent inchangées.

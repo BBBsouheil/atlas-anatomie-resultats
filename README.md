@@ -45,11 +45,11 @@ Le repérage automatique ne garantit pas une couverture exhaustive du cours. Les
 
 ## Dissection : fonctionnelle, pas encore réaliste
 
-![Vue du corps entier au début de la démonstration C173](media/dissection-live-body.png)
+![Vue d’ensemble du mode dissection avant incision](media/dissection-entry-c173.png)
 
-**[Démonstration C173 en mouvement, environ 1 min 29](media/dissection-live-c173.webm)** — également dans la [vitrine](https://BBBsouheil.github.io/atlas-anatomie-resultats/#dissection), avec chapitres et lecture rapide ou normale.
+**La vidéo de présentation de 89 secondes est retirée de la vitrine principale après revue visuelle.** Les changements de caméra, le contact apparent de la sonde et l’empilement des couches ne donnent pas une présentation acceptable. De nouvelles prises au cadrage fixe, avec contrôle des surfaces visibles et tractions séparées, n’ont pas permis un parcours complet et propre. Aucune amélioration de réalisme n’est revendiquée.
 
-La prise montre le corps entier, puis 13 gestes effectués dans C173 : incision au scalpel, décollement à la sonde, traction et relâchement à la pince, maintien par les écarteurs et petite incision du biceps. Le tissu bouge réellement dans la simulation conservée ; aucune reprise d’état ne remplace les mouvements entre les gestes. Les repères de collision et le sang sont désactivés, aucune couche anatomique n’est masquée. La page propose la lecture ×1,5 (environ une minute) et ×1 pour examiner le mouvement enregistré. Cette capture ne modifie pas la physique et ne valide pas son réalisme. Le [test historique de 3 min 55](media/dissection-c173.webm) reste disponible séparément.
+La [vitrine](https://BBBsouheil.github.io/atlas-anatomie-resultats/#dissection) affiche une photo de la table avant incision en attendant la correction. Le [test historique de 3 min 55](media/dissection-c173.webm) reste une preuve fonctionnelle distincte, avec ses diagnostics. Les enregistrements et tentatives sont conservés.
 
 C173 part des tissus recouvrants, expose le biceps gauche et incise une petite zone. Annulation, rétablissement et sauvegarde/reprise sont consignés. Ce scénario reste la référence fonctionnelle de développement.
 

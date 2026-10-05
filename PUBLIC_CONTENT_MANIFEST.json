@@ -1,6 +1,6 @@
 {
-  "status": "PROJECT_SHOWCASE_MEDIA_REVISION_V3",
-  "atUtc": "2026-10-05T18:27:14.621825+00:00",
+  "status": "REJECTED_DEMO_WITHDRAWN_V4_CLEAN_DEMO_PENDING",
+  "atUtc": "2026-10-05T18:55:04.734937+00:00",
   "files": [
     {
       "path": ".nojekyll",
@@ -24,8 +24,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 28601,
-      "sha256": "6ca03f6faa10f035a379ef7769d11e2216945adc072f0674a2f34c8800cd03e7"
+      "bytes": 26849,
+      "sha256": "9f34d0d62a8d09204cf8425f2819e46823dd24eee1a5898f44c28f84f586d841"
     },
     {
       "path": "media/atlas-explorer.png",
@@ -56,6 +56,11 @@
       "path": "media/dissection-clean-steps.webm",
       "bytes": 2496118,
       "sha256": "70392312b8412fb9f77eaa3169d75f5da96b382fba5da74194629cf38149b251"
+    },
+    {
+      "path": "media/dissection-entry-c173.png",
+      "bytes": 371357,
+      "sha256": "039de45f1767b14f4fe0271357eaa19e9f7310a8968fb65912de11d7786489e6"
     },
     {
       "path": "media/dissection-live-body.png",
@@ -119,13 +124,13 @@
     },
     {
       "path": "MEDIA_ATTRIBUTIONS.md",
-      "bytes": 6654,
-      "sha256": "59cb2b6eebc94e7c001ef7f5d1d0d19e334410032ceeaebc357eafb66791ab8d"
+      "bytes": 7522,
+      "sha256": "ab2dea6348e61089138c55caae02f29e68dda4174146a4f178efd1ce3e7384c0"
     },
     {
       "path": "NOTICE_DONNEES_ET_DROITS.txt",
-      "bytes": 4205,
-      "sha256": "2196f30b6493ae1356d53e92335164434086443f8cce25816c184bc269f5990a"
+      "bytes": 4503,
+      "sha256": "52880c547f5204823f5b69bf64915cdaeed60042b29cebf1895fab64d7501d61"
     },
     {
       "path": "notices/HUMAN-ATLAS-MIT.txt",
@@ -139,13 +144,13 @@
     },
     {
       "path": "presentation.js",
-      "bytes": 7589,
-      "sha256": "8802f22317117e43e1515f5675f56926808e162a0624b7e88d3f54ae59568f85"
+      "bytes": 4343,
+      "sha256": "cc146e6cdbee9c4c3d3104bb46101f148b693365bf3cf2ab9f840c3f567d7aa5"
     },
     {
       "path": "README.md",
-      "bytes": 11930,
-      "sha256": "ab5dc9a3a5d0f1f940384e64695bc242f1b51f6e583efeca3d41244073a0b0c5"
+      "bytes": 11758,
+      "sha256": "7976f517dacbdc628813c50f1edcf311f95d51b9ee80e251f25ce2086f0caded"
     },
     {
       "path": "RESULTATS_IA_DETAILS.md",
@@ -173,17 +178,24 @@
     "knownC182Case": true
   },
   "historicalOriginalMediaUnmodified": true,
-  "dissectionCapture": "Continuous native WebGL capture on unchanged C173, whole body and 13 ordinary UI gestures. No intermediate checkpoint substitution; diagnostics and blood off; anatomy not hidden.",
+  "dissectionCapture": "Archived V3 continuous capture, rejected visually; current main section shows a photograph only",
   "dissectionSeconds": 89.103,
   "videoFileAtRecordedSpeed": true,
-  "videoPlaybackRateDefault": 1.5,
-  "normalSpeedSelectable": true,
-  "dissectionChapters": 7,
   "newPhysicsOrRealismValidation": false,
   "previousCheckpointMontageRetained": true,
   "scannerMedia": "Five recrops of the same9.4s recorded C183 replay; no new CT or inference",
   "scientificTablesUnchanged": true,
   "newInference": false,
   "stableInstallationModified": false,
-  "existingMITAndThirdPartyNoticesPreserved": true
+  "existingMITAndThirdPartyNoticesPreserved": true,
+  "rejectedDissectionVideoInMainPresentation": false,
+  "rejectedVideoRetained": true,
+  "currentDissectionPresentation": "Photograph of C173 overview before incision; complete clean recording not achieved",
+  "fixedCaptureAttemptsAccepted": false,
+  "explanationOfAIAddedInV4": false,
+  "modelsModified": false,
+  "bloodWorkPerformed": false,
+  "archivedV3_videoPlaybackRateDefault": 1.5,
+  "archivedV3_normalSpeedSelectable": true,
+  "archivedV3_dissectionChapters": 7
 }

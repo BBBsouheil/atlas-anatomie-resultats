@@ -19,3 +19,5 @@ La base Human Atlas conserve ses déclarations MIT existantes. Rendre le code pr
 Les dépendances, données et ressources anatomiques gardent leurs conditions propres. Les notices locales relèvent notamment CC BY-SA 4.0 pour MSD-Spleen, CC BY 4.0 pour TotalSegmentator et de déclarations divergentes pour AMOS22. Aucun média AMOS n’est redistribué ici. Les contributions anatomiques peuvent avoir des licences CC BY / CC BY-SA / non commerciales distinctes. Aucun droit global de redistribution commerciale n’est affirmé.
 
 Les anciens brouillons et reçus restent archivés localement hors du dépôt public. Le snapshot privé couvre Atlas C183 et les sources rénales C181/C184/C185 ; il n’est pas une archive exhaustive des projets historiques.
+
+REVUE VISUELLE V4 : la démonstration de 89 secondes, conservée, est retirée de la présentation principale. dissection-entry-c173.png montre la table avant incision dans une séance isolée C173, sans modification du moteur. Les reprises fixes interrompues ne sont pas publiées comme résultat complet ou validé.
