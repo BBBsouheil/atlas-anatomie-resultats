@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bilan détaillé des expériences IA de l’Atlas : apprentissage, résultats de segmentation, graphiques et limites conservées.">
+  <title>Bilan IA et limites — Atlas Anatomie</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="bilan-ia.css">
+</head>
+<body class="report-page">
+<a class="skip" href="#bilan-contenu">Aller au bilan</a>
+<header class="topbar">
+  <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">A</span><span>Atlas Anatomie<small>Projet de BBBsouheil</small></span></a>
+  <nav aria-label="Navigation principale"><a href="index.html#ia">La démonstration IA</a><a href="index.html#experiences">La comparaison</a></nav>
+  <span class="status">En développement</span>
+</header>
+<main id="bilan-contenu">
+  <div class="report-hero wrap">
+    <a class="report-back" href="index.html#experiences">← Retour à la présentation</a>
+    <p class="eyebrow">Le bilan scientifique conservé</p>
+    <h1>Résultats de l’IA.<br>Les chiffres et leurs limites.</h1>
+    <p class="report-intro"><strong>Projet expérimental de recherche et de pédagogie.</strong> Cette présentation publique montre une chaîne de traitement, des apprentissages réalisés et leurs limites. Le code est destiné à un dépôt privé. Les résultats ci-dessous proviennent des bilans conservés, sans nouvelle exécution scientifique pour cette présentation.</p>
+    <div class="report-summary" aria-label="Repères de lecture"><div><span>01</span><strong>Rate et reins</strong><p>Des expériences distinctes, avec leurs sources et protocoles.</p></div><div><span>02</span><strong>Résultats conservés</strong><p>Tableaux et graphiques déjà enregistrés, sans nouveau calcul.</p></div><div><span>03</span><strong>Limites visibles</strong><p>Échecs, références vides et identités non certifiées restent explicités.</p></div></div>
+  </div>
+  <div class="report-layout wrap">
+    <aside class="report-sidebar"><nav aria-label="Sommaire du bilan"><h2>Dans ce bilan</h2><ol><li class=""><a href="#parcours">Du CT à la 3D</a></li>
+<li class=""><a href="#ingenierie">Travail réalisé</a></li>
+<li class=""><a href="#resultats">Résultats et limites</a></li>
+<li class="toc-child"><a href="#rate">Rate</a></li>
+<li class="toc-child"><a href="#reins-c182">Reins · C182</a></li>
+<li class="toc-child"><a href="#reins-c184">Reins · C184</a></li>
+<li class="toc-child"><a href="#comparaison-c185">Comparaison · C185</a></li>
+<li class="toc-child"><a href="#dissection-c173">Limites de C173</a></li>
+<li class=""><a href="#sources">Données et sources</a></li>
+<li class=""><a href="#perimetre">Périmètre</a></li>
+<li class="toc-child"><a href="#sources-privees">Code privé</a></li></ol></nav><a class="report-download" href="RESULTATS_IA_DETAILS.md" download>Télécharger le texte source ↓</a></aside>
+    <article class="report-content"><section class="report-section" aria-labelledby="parcours">
+<h2 id="parcours">Vue d’ensemble</h2>
+<p>Le projet associe un atlas anatomique 3D interactif à une chaîne de segmentation de scanners CT pour <strong>deux organes : la rate et les reins droit/gauche</strong>.</p>
+<ol class="report-pipeline" aria-label="Du scanner à la visualisation"><li>CT et géométrie native</li><li>Prétraitement déterministe</li><li>Modèle entraîné dans le projet</li><li>Masque remis sur la grille native</li><li>Surface en coordonnées physiques</li><li>Fiche et visualisation interactive</li></ol>
+<p>Les résultats patient conservent leur géométrie physique ; ils ne sont pas automatiquement alignés sur le corps de référence de l’atlas.</p>
+</section>
+<section class="report-section" aria-labelledby="ingenierie">
+<h2 id="ingenierie">Travail technique démontré</h2>
+<ul>
+<li><strong>Interface 3D</strong> : navigation anatomique, sélection de structures, fiches pédagogiques et vues de coupes, avec React et Three.js.</li>
+<li><strong>Apprentissage supervisé réel</strong> : les modèles de rate et de reins ont été entraînés dans le projet à partir de CT annotés. Les expériences rénales C181/C184 partent d’une initialisation aléatoire ; leurs checkpoints et courbes d’apprentissage sont enregistrés.</li>
+<li><strong>Chaîne CT → masque → surface → fiche</strong> : prétraitement, inférence, retour à la grille d’origine, export et visualisation. Les tests vérifient notamment les coordonnées et la parité des exports.</li>
+<li><strong>Traçabilité</strong> : versions figées, empreintes SHA256, protocoles prospectifs, conservation des tentatives et séparation entre prédiction et scoring des annotations.</li>
+<li><strong>Analyse des erreurs</strong> : bilans conservant les mauvais cas, références vides, couvertures limitées et limites d’indépendance des données.</li>
+</ul>
+<p>L’exécution correcte du logiciel ne suffit pas à établir la qualité des segmentations.</p>
+</section>
+<section class="report-section" aria-labelledby="resultats">
+<h2 id="resultats">Résultats et limites</h2>
+<h3 id="rate">Rate</h3>
+<p>Les modèles ont été entraînés sur Medical Segmentation Decathlon, tâche rate. Une évaluation externe sur des CT AMOS22 a été menée dans C179. Les identités indépendantes des patients ne sont pas certifiées ; les groupes observables ne doivent pas être présentés comme des identités garanties. Aucun score de compétition officiel ni performance clinique n’est revendiqué ici. Les sources originales sont citées plus bas.</p>
+<h3 id="reins-c182">Reins — C182 : généralisation externe insuffisante</h3>
+<p>C182 évalue le modèle C181 figé sur <strong>29 CT admissibles</strong>, après une exclusion géométrique fixée avant l’inférence. Les 29 cas ont été scorés. Le critère primaire utilise <strong>27 références non vides par côté</strong> ; les références vides et couvertures limitées sont décrites séparément.</p>
+<p>Dice et IoU mesurent le recouvrement avec la référence : plus ils sont proches de 1, mieux c’est. Le HD95 mesure une erreur de distance entre les contours : une valeur plus faible est préférable.</p>
+<div class="table-scroll" role="region" aria-label="Tableau des métriques" tabindex="0"><table><thead><tr><th scope="col">Métrique primaire</th><th scope="col">Rein droit</th><th scope="col">Rein gauche</th></tr></thead><tbody>
+<tr><th scope="row">Dice moyen</th><td>0,692673</td><td>0,738662</td></tr>
+<tr><th scope="row">IoU moyen</th><td>0,591062</td><td>0,626313</td></tr>
+<tr><th scope="row">HD95 moyen, mm</th><td>124,954952</td><td>115,859915</td></tr>
+<tr><th scope="row">HD95 médian, mm</th><td>34,500000</td><td>29,470324</td></tr>
+<tr><th scope="row">HD95 maximal, mm</th><td>468,459629</td><td>399,264950</td></tr>
+</tbody></table></div>
+<p>Valeurs arrondies pour la lecture ; les agrégats enregistrés sont reproduits dans <a href="results-public.json">results-public.json</a>. Le maximum droit atteint <strong>46,85 cm</strong>. Ces résultats sont faibles et ne permettent pas de présenter le modèle comme performant. Un fichier de référence vide ne démontre pas une absence clinique de rein. Aucun intervalle de confiance patient n’est estimé : les identités indépendantes ne sont pas certifiées.</p>
+<figure class="report-figure"><a href="figures/c182-distributions-positives.png" aria-label="Agrandir : Distributions externes C182 : Dice et HD95, références non vides"><img src="figures/c182-distributions-positives.png" alt="Distributions externes C182 : Dice et HD95, références non vides" loading="lazy"></a>
+<figcaption>Figure originale déjà scellée : la longue queue des erreurs de distance reste visible.</figcaption>
+</figure>
+<h3 id="reins-c184">Reins — C184 : régression de validation</h3>
+<p>Sur les <strong>6 mêmes volumes / 12 côtés de validation de développement déjà consultés</strong>, le Dice moyen passe de <strong>0,866718 (C181)</strong> à <strong>0,851960 (C184)</strong>. Huit côtés sur douze se dégradent. Le HD95 moyen passe de <strong>16,526714 mm</strong> à <strong>31,044593 mm</strong> ; neuf côtés sur douze se dégradent.</p>
+<p>C184 <strong>n’est pas intégré à l’application</strong> et ne remplace pas C181. Le contexte de coupes et la graine diffèrent ensemble ; ce bilan ne démontre ni une cause isolée ni une amélioration externe. L’échec externe C182 était connu lorsque la poursuite du travail a été décidée.</p>
+<figure class="report-figure"><a href="figures/c184-apprentissage-developpement.png" aria-label="Agrandir : Courbes d’apprentissage et de validation de développement C181 et C184"><img src="figures/c184-apprentissage-developpement.png" alt="Courbes d’apprentissage et de validation de développement C181 et C184" loading="lazy"></a>
+<figcaption>Courbes issues des entraînements réellement exécutés ; la validation a été consultée pendant le développement.</figcaption>
+</figure>
+<h3 id="comparaison-c185">C185 : comparaison externe terminée, régression C184</h3>
+<p>La comparaison prospective porte sur <strong>30 volumes CT</strong>, sans certification de 30 patients indépendants. Les 60 tentatives modèle-volume sont scellées ; chacun des modèles a 30 volumes scorés. Le rapport conserve <strong>0 échec de prédiction et 0 échec de scoring pour chaque modèle</strong>, sans paire manquante. Ces succès d’exécution ne démontrent pas la qualité du modèle.</p>
+<p>Le critère primaire porte sur <strong>26 références non vides à droite et 27 à gauche</strong>, conservées à l’identique pour les deux modèles :</p>
+<div class="table-scroll" role="region" aria-label="Tableau des métriques" tabindex="0"><table><thead><tr><th scope="col">Métrique primaire</th><th scope="col">C181 droit</th><th scope="col">C184 droit</th><th scope="col">C181 gauche</th><th scope="col">C184 gauche</th></tr></thead><tbody>
+<tr><th scope="row">Dice moyen</th><td>0,745477</td><td>0,701130</td><td>0,642427</td><td>0,633835</td></tr>
+<tr><th scope="row">IoU moyen</th><td>0,645944</td><td>0,581705</td><td>0,517744</td><td>0,522983</td></tr>
+<tr><th scope="row">HD95 moyen, mm</th><td>71,230181</td><td>204,111678</td><td>55,376379</td><td>123,921195</td></tr>
+<tr><th scope="row">HD95 médian, mm</th><td>17,873566</td><td>182,746257</td><td>20,457273</td><td>102,495122</td></tr>
+<tr><th scope="row">HD95 maximal, mm</th><td>483,998889</td><td>513,672585</td><td>450,039748</td><td>359,988750</td></tr>
+</tbody></table></div>
+<p>Les deltas Dice moyens appariés <strong>C184 − C181</strong> sont <strong>−0,044347 à droite</strong> et <strong>−0,008592 à gauche</strong>. Les deltas HD95 moyens sont <strong>+132,881497 mm</strong> et <strong>+68,544816 mm</strong>. Il s’agit d’une régression moyenne du Dice et du HD95 sur les deux côtés ; l’IoU moyen gauche est légèrement meilleur, et les cas individuels ne se dégradent pas tous de la même façon. Les valeurs exactes et les strates descriptives restent dans <a href="results-public.json">results-public.json</a>.</p>
+<p>Les <strong>4 références vides à droite et 3 à gauche</strong> restent hors de la moyenne primaire positive, avec leurs résultats séparés. Les couvertures <strong>limitées</strong> (10 à droite, 11 à gauche) et <strong>inconnues</strong> (20 et 19) sont conservées ; aucune couverture complète n’est certifiée par cet audit. Les HD95 indéfinis restent explicitement dénombrés et conservés comme null dans les agrégats concernés.</p>
+<p>Les groupes de provenance n’établissent pas des patients ou unités d’échantillonnage indépendants ; les intervalles de confiance restent <strong>null</strong>. La source était déjà connue, les nouveaux identifiants ont été audités, et le contexte de coupes et la graine changent ensemble : aucune cause isolée n’est démontrée. Aucun modèle n’est promu ou installé à la suite du bilan.</p>
+<p>Cette révision publique lit uniquement le rapport et les scores déjà enregistrés, sans CT, annotation, modèle ou recalcul de métriques. <strong>Elle ne vérifie pas les exports C185 ni leur parcours dans l’Atlas</strong> ; leur réussite, leur qualité et leurs éventuels échecs ne sont pas établis par cette présentation. Aucune nouvelle figure C185 n’est produite.</p>
+<h3 id="dissection-c173">Dissection — prototype C173</h3>
+<p>Le parcours de dissection testé concerne un segment limité du biceps et une petite incision automatisée. Il ne démontre pas une dissection musculaire universelle. La revue conservée signale une reconstruction bloquante, des raccords géométriques sensibles au trajet et l’absence, dans ce parcours, d’un test de traction du muscle réellement incisé. Le rendu et la biomécanique ne sont pas validés ; une incision visible ne suffit pas à établir leur réalisme. Le chantier du sang reste suspendu.</p>
+</section>
+<section class="report-section" aria-labelledby="sources">
+<h2 id="sources">Données, sources et notices</h2>
+<ul>
+<li><strong>Medical Segmentation Decathlon, Task09_Spleen</strong> : <a href="https://medicaldecathlon.com/">challenge original</a> et <a href="https://arxiv.org/abs/1902.09063">description des jeux par les auteurs</a>. Les notices locales déclarent CC BY-SA 4.0 pour ces données.</li>
+<li><strong>AMOS22</strong> : <a href="https://proceedings.neurips.cc/paper_files/paper/2022/file/ee604e1bedbd069d9fc9328b7b9584be-Paper-Datasets_and_Benchmarks.pdf">publication originale</a> et <a href="https://zenodo.org/records/7262581">version du dataset utilisée</a>. Les preuves locales conservent une divergence de licence entre les déclarations Zenodo, archive et supplément des auteurs ; aucune autorisation commerciale des données n’est affirmée.</li>
+<li><strong>TotalSegmentator small, version 2.0.1</strong> : <a href="https://zenodo.org/records/10047263">notice officielle de version</a>, CC BY 4.0 dans les métadonnées officielles auditées ; <a href="https://pubs.rsna.org/doi/10.1148/ryai.230024">publication originale</a>.</li>
+<li><strong>Sources de l’atlas</strong> : <a href="https://github.com/slorksmo/Human-Atlas">Human Atlas</a>, <a href="https://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html">BodyParts3D</a>, <a href="https://humanatlas.io/">Human Reference Atlas</a> et <a href="https://github.com/Z-Anatomy/Models-of-human-anatomy">Z-Anatomy</a>. Les notices existantes distinguent MIT pour la base logicielle et les conditions des ressources tierces, notamment CC BY, CC BY-SA et certaines restrictions non commerciales.</li>
+</ul>
+<p>Les notices MIT antérieures et les licences tierces restent conservées. <strong>Aucune nouvelle licence des contributions originales n’a encore été choisie.</strong> Voir <a href="NOTICE_DONNEES_ET_DROITS.txt">la notice de périmètre</a>.</p>
+</section>
+<section class="report-section" aria-labelledby="perimetre">
+<h2 id="perimetre">Périmètre de cette présentation</h2>
+<p>Ce document conserve le bilan numérique détaillé. La vitrine associée ajoute des captures et vidéos historiques attribuées ; les graphiques et agrégats restent inchangés. Voir MEDIA_ATTRIBUTIONS.md pour les médias du CT public TotalSegmentator s0970. Le premier brouillon complet est conservé dans une archive locale distincte. Le dossier public ne fournit aucun CT brut, annotation native, image médicale privée, code scientifique, poids ou export natif. Des coupes et prédictions du cas public TotalSegmentator apparaissent dans la démonstration C183. Il n’est pas un installateur autonome. Les figures montrent des métriques, pas des images de patients. Le statut reste <strong>travail en cours</strong>, sans validation médicale revendiquée.</p>
+<h3 id="sources-privees">Périmètre des sources privées</h3>
+<p>Le snapshot de sources privé contient l’application C183 et les expériences rénales C181/C184/C185. Il ne fournit pas les expériences complètes d’entraînement et d’évaluation de la rate C176/C177/C179, ni leurs données ou poids. L’interface de rate et certains adaptateurs historiques restent présents dans C183. La vitrine décrit le projet dans son ensemble ; seul son HTML/CSS/JavaScript de présentation est public, pas le code de l’application ou des expériences.</p>
+</section></article>
+  </div>
+  <div class="report-end wrap"><h2>Revenir aux démonstrations</h2><p>Ce bilan détaille les résultats conservés. Les captures et les vidéos se trouvent dans la présentation.</p><a class="button primary" href="index.html#ia">Voir l’imagerie et la 3D →</a></div>
+</main>
+<footer class="footer wrap"><div><strong>Atlas Anatomie</strong><p>Projet en cours de développement. Aucun modèle, CT ou résultat scientifique n’a été recalculé pour mettre en page ce bilan.</p></div><div><a href="index.html">Retour à la présentation</a><a href="results-public.json">Agrégats numériques conservés</a><a href="#">Retour en haut ↑</a></div></footer>
+</body>
+</html>

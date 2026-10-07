@@ -49,7 +49,7 @@ Les médias C183 montrent des coupes du cas public **s0970**, avec les prédicti
 
 La base **[Human Atlas](https://github.com/slorksmo/Human-Atlas)** conserve son [avis MIT original](notices/HUMAN-ATLAS-MIT.txt). Cet avis ne remplace pas les licences des modèles, textes et images.
 
-Les deux graphiques et agrégats rénaux proviennent des bilans déjà enregistrés. Aucun entraînement, score ou prédiction n’a été recalculé pour cette présentation. Voir le [bilan détaillé](RESULTATS_IA_DETAILS.md) et la [notice de droits](NOTICE_DONNEES_ET_DROITS.txt).
+Les deux graphiques et agrégats rénaux proviennent des bilans déjà enregistrés. Aucun entraînement, score ou prédiction n’a été recalculé pour cette présentation. Voir le [bilan détaillé](bilan-ia.html) et la [notice de droits](NOTICE_DONNEES_ET_DROITS.txt).
 
 ## Retrait de la démonstration V3 après revue visuelle
 

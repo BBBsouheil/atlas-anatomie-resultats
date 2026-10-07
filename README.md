@@ -110,7 +110,7 @@ C184 entraîne un candidat 2,5D, puis C185 compare les modèles figés sur **30 
 
 Dice/IoU : recouvrement avec l’annotation, plus proche de 1 est préférable. HD95 : distance entre contours, plus faible est préférable.
 
-👉 [Bilans détaillés C182/C184/C185](RESULTATS_IA_DETAILS.md) · [Agrégats numériques enregistrés](results-public.json)
+👉 [Bilans détaillés C182/C184/C185](bilan-ia.html) · [Agrégats numériques enregistrés](results-public.json)
 
 ## Le travail d’ingénierie
 
